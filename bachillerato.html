@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bachillerato</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <style>
+    .image-container{
+  position: relative; 
+  width: 100%;
+  height: 300px; 
+  overflow: hidden;
+}
+
+.image-container img{
+  width: 100%;
+  height: 100%; 
+  object-fit: cover; 
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.overlay-text{
+  position: absolute;
+  top: 50%;
+  left: 10%; 
+  transform: translateY(-50%); 
+  color: white;
+  text-align: left; 
+}
+
+.overlay-text h1{
+    font-size: pt;
+  font-size: 36px;
+  margin: 0;
+}
+
+
+
+
+
+
+.centered-section{
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px; 
+}
+
+.centered-section h1{
+    font-family: pt;
+    margin-bottom: 20px;
+}
+
+.centered-section h3{
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+.table-section{
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px; 
+}
+
+.table-section h2{
+    margin-bottom: 20px;
+}
+
+.table-section table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto; 
+}
+
+.table-section th, .table-section td{
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.table-section tr:nth-child(even){
+    background-color: #f9f9f9;
+}
+
+.table-section tr:hover{
+    background-color: #f1f1f1;
+}
+
+
+
+
+
+
+
+
+.image-with-text{
+  position: relative;
+  width: 100%;
+  margin: 40px 0; 
+  overflow: hidden; 
+}
+
+.image-with-text a{
+  display: block; 
+}
+
+.image-with-text img{
+  width: 100%;
+  height: 300px; 
+  object-fit: cover;
+  filter: brightness(50%);
+  transition: transform 0.3s ease; 
+}
+
+.image-with-text img:hover{
+  transform: scale(1.05); 
+}
+
+
+
+
+
+
+
+.custom-section{
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.custom-section h2{
+    font-family: nunito;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 135px;
+}
+
+.content{
+    display: flex;
+    align-items: flex-start;
+}
+
+.left-content{
+    flex: 1;
+    margin-right: 20px; 
+}
+
+.left-content img{
+    width: 100%;
+    height: auto;
+}
+
+.right-content{
+    font-size: medium;
+    font-family: roboto;
+    margin-left: 150px;
+    flex: 2;
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+.table-section{
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px; 
+}
+
+.table-section h2{
+    margin-bottom: 20px;
+}
+
+.bachillerato-table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto; 
+}
+
+.bachillerato-table th, .bachillerato-table td{
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.bachillerato-table tr.alt-row{
+    background-color: #f9f9f9; 
+}
+
+.bachillerato-table tr:hover{
+    background-color: #f1f1f1;
+}
+
+
+
+.bachillerato-table .optativa{ 
+    background-color: #ffeb99 !important; 
+}
+
+
+
+
+
+
+
+.thin-line{
+  border: 0;
+  border-top: 1px solid #000; 
+  margin: 100px auto; 
+  width: 50%; 
+}
+
+
+
+
+
+
+
+
+
+
+
+.custom-section-derecha{
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.custom-section-derecha .content{
+    display: flex;
+    align-items: flex-start;
+}
+
+.custom-section-derecha .left-content{
+    font-family: nunito;
+    flex: 2;
+    margin-right: 20px; 
+    text-align: left;
+}
+
+.custom-section-derecha .right-content{
+    flex: 1;
+    text-align: left;
+    
+}
+
+.custom-section-derecha .right-content h2{
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 115px;
+    font-family: nunito;
+}
+
+.custom-section-derecha .right-content img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+.centered-content{
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px; 
+}
+
+.centered-content h2{
+    margin-bottom: 20px;
+}
+
+.centered-content p{
+    text-align: center; 
+}
+
+
+    </style>
+</head>
+<body>
+    <!------------------------------------------------------------------------------------------------------------------->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="index.html"><img src="img/image (1).png" alt="Logo"></a>
+        </div>
+        <nav>
+          <div class="dropdown">
+            <a href="centro.html">Nuestro Centro</a>
+            <div class="dropdown-content">
+              <a href="centro.html">Centro</a>
+              <a href="aulas.html">Aulas</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="#">Ciclos Educativos</a>
+            <div class="dropdown-content">
+              <a href="eso.html">ESO</a>
+              <a href="bachillerato.html">Bachillerato</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="#">Administración</a>
+            <div class="dropdown-content">
+              <a href="organigrama.html">Organigrama</a>
+              <a href="plan_estudio.html">Plan de Estudios</a>
+              <a href="becas.html">Becas</a>
+              <a href="matriculas.html">Matrículas</a>
+              <a href="titulos.html">Títulos</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="orientaciones.html">Orientación</a>
+            <div class="dropdown-content">
+              <a href="departamentos.html">Departamentos</a>
+              <a href="orientaciones.html">Orientaciones</a>
+            </div>
+          </div>
+          <a href="index.html#contacto">Contactos</a>
+          <a href="https://itponiente.com/moodle/login/index.php">Aula Virtual</a>
+        </nav>
+      </div>
+    </header>
+
+  
+  
+  <div class="image-container">
+    <img src="img/estudiantes.jpg" alt="Imagen horizontal">
+    <div class="overlay"></div>
+    <div class="overlay-text">
+      <h1><u>Bachillerato</u></h1>
+    </div>
+  </div>
+  
+  <br><br>
+
+  <div class="centered-section">
+    <h1>Bachillerato  de 16 a los 18 años</h1>
+    <h3>El <u>Bachillerato</u> es una etapa educativa crucial que ofrece formación especializada, prepara a los estudiantes para acceder a estudios superiores o ciclos de formación profesional, y les proporciona las competencias necesarias para afrontar retos académicos y laborales futuros</h3>
+</div>
+
+<!---------------------------------------------------------------------------------------------------------------------->
+<br><br><br>
+  
+<div class="custom-section">
+    <h2>Artes</h2>
+    <div class="content">
+        <div class="left-content">
+            <img src="img/artesss.png" alt="Descripción de la imagen">
+        </div>
+        <div class="right-content">
+            <p><br>El Bachillerato de Artes es una etapa educativa diseñada para estudiantes con inclinaciones creativas y artísticas. Este itinerario ofrece una formación integral que combina el aprendizaje teórico con la práctica en disciplinas relacionadas con las artes plásticas, visuales y escénicas, desarrollando habilidades técnicas y fomentando la expresión personal.
+
+                <br><br>En este bachillerato, los alumnos exploran materias como Dibujo Artístico, Diseño, Fundamentos del Arte, Historia del Arte y Técnicas de Expresión Gráfica. Estas asignaturas les proporcionan una sólida base cultural y técnica, permitiéndoles comprender y apreciar la evolución del arte, mientras desarrollan su estilo y lenguaje propio.
+            
+                <br><br>Además, el Bachillerato de Artes integra herramientas tecnológicas y digitales, preparando a los estudiantes para el mundo contemporáneo. Desde el diseño gráfico hasta las técnicas multimedia, los alumnos adquieren competencias que les abren las puertas a un amplio abanico de posibilidades profesionales.
+
+                <br><br>Este itinerario no solo se enfoca en el desarrollo de habilidades técnicas, sino que también fomenta el pensamiento crítico, la sensibilidad estética y la capacidad de comunicar ideas de forma creativa. Es ideal para aquellos que buscan carreras en el diseño, las bellas artes, la arquitectura, la animación o cualquier campo relacionado con la creatividad y la innovación.</p>
+        </div>
+    </div>
+</div>
+<br><br>
+<div class="table-section">
+    <h2>Asignaturas de Bachillerato de Artes</h2>
+    <table class="bachillerato-table">
+        <tr>
+            <th>Asignaturas</th>
+            <th>1º de Bachillerato</th>
+            <th>2º de Bachillerato</th>
+        </tr>
+        <tr>
+            <td>Matemáticas</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td>Lengua y Literatura</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td>Biología</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td>Inglés</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr class="optativa">
+            <td>Dibujo Técnico</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td>Historia</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr class="optativa">
+            <td>Tecnología Industrial</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td>Filosofía</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr class="optativa">
+            <td>Economía</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td>Educación Física</td>
+            <td>✔</td>
+            <td></td>
+        </tr>
+        <tr class="optativa">
+            <td>Psicología</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        
+    </table>
+</div>
+
+
+<!---------------------------------------------------------------------------------------------------------------------->
+<hr class="thin-line">
+
+
+<div class="custom-section-derecha">
+    <div class="content">
+        <div class="left-content">
+            <p>El Bachillerato de Ciencias está diseñado para estudiantes interesados en explorar el mundo natural, las matemáticas y la tecnología. Este itinerario académico proporciona una formación sólida y rigurosa que combina teoría y práctica, preparándolos para afrontar estudios universitarios en áreas científicas, técnicas y de salud.
+
+                <br><br>Las materias principales incluyen Matemáticas, Física, Química y Biología, junto con asignaturas opcionales como Tecnología Industrial, Ciencias de la Tierra o Economía. Estas disciplinas desarrollan habilidades analíticas, razonamiento lógico y una comprensión profunda de los principios que rigen el universo físico y biológico.
+                
+                <br><br>Además de los conocimientos teóricos, el Bachillerato de Ciencias enfatiza la práctica en laboratorios equipados, donde los estudiantes realizan experimentos que les ayudan a comprender los conceptos de manera tangible. Este enfoque fomenta el espíritu crítico, la capacidad de resolver problemas y el interés por la investigación científica.
+                
+                <br><br>El itinerario también integra competencias tecnológicas, como el uso de herramientas digitales y software especializado, preparando a los alumnos para un entorno académico y profesional cada vez más digitalizado.
+                
+                <br><br>El Bachillerato de Ciencias es ideal para quienes desean seguir carreras en campos como Medicina, Ingeniería, Física, Biotecnología, Informática o Matemáticas. Su enfoque multidisciplinario y su rigor académico lo convierten en un pilar fundamental para estudiantes apasionados por la ciencia y la innovación.</p>
+        </div>
+        <div class="right-content">
+            <h2>Ciencias</h2>
+            <img src="img/cienciasss.png" alt="Descripción de la imagen">
+        </div>
+    </div>
+</div>
+
+
+<br><br><br>
+
+<div class="table-section">
+    <h2>Asignaturas de Bachillerato de Ciencias</h2>
+    <table class="bachillerato-table">
+        <tr>
+            <th>Asignaturas</th>
+            <th>1º de Bachillerato</th>
+            <th>2º de Bachillerato</th>
+        </tr>
+        <tr>
+            <td>Matemáticas</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td>Lengua y Literatura</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td>Biología</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td>Física</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td>Química</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td>Inglés</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td>Historia</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td>Filosofía</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td>Educación Física</td>
+            <td>✔</td>
+            <td></td>
+        </tr>
+        <tr class="optativa">
+            <td>Dibujo Técnico</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr class="optativa">
+            <td>Tecnología Industrial</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr class="optativa">
+            <td>Geología</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr class="optativa">
+            <td>Psicología</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+    </table>
+</div>
+
+
+
+<!---------------------------------------------------------------------------------------------------------------------->
+<br>
+<hr class="thin-line">
+  
+<div class="custom-section">
+    <h2 style="margin-left: 75px;">Ciencias Sociales</h2>
+    <div class="content">
+        <div class="left-content">
+            <img src="img/socialesss.png" alt="Descripción de la imagen">
+        </div>
+        <div class="right-content">
+            <p><br>El Bachillerato de Ciencias Sociales está diseñado para estudiantes interesados en comprender las dinámicas de la sociedad, la economía y el comportamiento humano. Este itinerario combina el rigor académico con un enfoque práctico, preparando a los alumnos para estudios superiores en áreas como Economía, Derecho, Sociología, Psicología, Administración y más.
+
+                <br><br>Las materias principales incluyen Matemáticas Aplicadas a las Ciencias Sociales, Economía, Historia del Mundo Contemporáneo y Geografía. A través de estas asignaturas, los estudiantes adquieren herramientas para analizar fenómenos económicos, políticos y sociales, desarrollar pensamiento crítico y tomar decisiones fundamentadas en datos y contextos.
+                
+                <br><br>El programa fomenta el uso de tecnología y recursos digitales para investigar, interpretar estadísticas y comunicar ideas de manera efectiva. Además, los alumnos tienen la oportunidad de participar en proyectos y debates que los conectan con el mundo real, ayudándolos a desarrollar habilidades prácticas como el trabajo en equipo, la negociación y la resolución de conflictos.
+                
+                <br><br>El Bachillerato de Ciencias Sociales es una excelente opción para quienes desean influir en el cambio social, entender el comportamiento humano o liderar en el ámbito empresarial. Ofrece una visión amplia de las relaciones humanas y de las estructuras que sostienen nuestras comunidades, formando a estudiantes como ciudadanos responsables, críticos y comprometidos</p>
+        </div>
+    </div>
+</div>
+<br><br>
+<div class="table-section">
+    <h2>Asignaturas de Bachillerato de Ciencias Sociales</h2>
+    <table class="bachillerato-table">
+        <tr>
+            <th>Asignaturas</th>
+            <th>1º de Bachillerato</th>
+            <th>2º de Bachillerato</th>
+        </tr>
+        <tr>
+            <td>Matemáticas Aplicadas a las CCSS</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td>Lengua y Literatura</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td>Economía</td>
+            <td>✔</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Historia del Mundo Contemporáneo</td>
+            <td>✔</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Filosofía</td>
+            <td>✔</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Historia de España</td>
+            <td></td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td>Inglés</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr class="optativa">
+            <td>Historia del Arte</td>
+            <td></td>
+            <td>✔</td>
+        </tr>
+        <tr class="optativa">
+            <td>Economía de la Empresa</td>
+            <td></td>
+            <td>✔</td>
+        </tr>
+        <tr class="optativa">
+            <td>Literatura Universal</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr class="optativa">
+            <td>Psicología</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td>Educación Física</td>
+            <td>✔</td>
+            <td></td>
+        </tr>
+    </table>
+</div>
+
+<!---------------------------------------------------------------------------------------------------------------------->
+
+<br><br><br>
+
+  <section class="form-section">
+    <div class="image-divider">
+      <img src="img/divisor.png" alt="Divisor de secciones">
+    </div>
+    <div class="info-container">
+        <br>
+        <div class="centered-content">
+            <h2 style="font-family: nunito;">Bachillerato General</h2>
+            <p style="font-family: roboto;">El Bachillerato General es una opción educativa versátil y equilibrada que ofrece una formación integral a los estudiantes. Está diseñado para aquellos que aún no han definido una carrera específica, brindándoles una base sólida en áreas clave como las ciencias, las humanidades, y las ciencias sociales. Este itinerario prepara a los alumnos tanto para continuar estudios universitarios como para incorporarse al mundo laboral con habilidades fundamentales.
+
+                <br><br>Las asignaturas incluyen una combinación de materias comunes como Lengua y Literatura, Matemáticas, Historia, Filosofía e Idiomas, junto con asignaturas optativas que permiten personalizar el aprendizaje según los intereses de cada estudiante. Esta flexibilidad fomenta la exploración académica y el desarrollo de talentos individuales.
+                
+                <br><br>El programa también promueve competencias transversales como el pensamiento crítico, la resolución de problemas, la comunicación efectiva y el trabajo en equipo. Los estudiantes participan en proyectos interdisciplinarios y actividades extracurriculares que enriquecen su experiencia educativa y los preparan para un entorno globalizado y competitivo</p>
+        </div>
+        <br><br>
+        <div class="table-section">
+            
+            <table class="bachillerato-table">
+                <tr style="background-color: #144734;">
+                    <th>Asignaturas</th>
+                    <th>1º de Bachillerato</th>
+                    <th>2º de Bachillerato</th>
+                </tr>
+                <tr>
+                    <td>Matemáticas</td>
+                    <td>✔</td>
+                    <td>✔</td>
+                </tr>
+                <tr>
+                    <td>Lengua y Literatura</td>
+                    <td>✔</td>
+                    <td>✔</td>
+                </tr>
+                <tr>
+                    <td>Historia</td>
+                    <td>✔</td>
+                    <td>✔</td>
+                </tr>
+                <tr>
+                    <td>Filosofía</td>
+                    <td>✔</td>
+                    <td>✔</td>
+                </tr>
+                <tr>
+                    <td>Inglés</td>
+                    <td>✔</td>
+                    <td>✔</td>
+                </tr>
+                <tr>
+                    <td>Educación Física</td>
+                    <td>✔</td>
+                    <td>✔</td>
+                </tr>
+                <tr>
+                    <td>Historia de España</td>
+                    <td>✔</td>
+                    <td>✔</td>
+                </tr>
+            </table>
+        </div>
+        
+
+        <br><br><br><br><br>
+
+
+
+        <div class="image-with-text">
+            <a href="centro.html#elegir">
+              <img src="img/espaldas.jpg" alt="Imagen con texto">
+              <div class="text-overlay">¿Por qué elegirnos?</div>
+            </a>
+          </div>
+    </div>
+    
+  </section>
+
+
+
+
+<!------------------------------------------------------------------------------------------------------------------->
+<footer>
+    <div class="image-divider">
+      <img style="position: absolute; top: -40px;" src="img/divisor2.png" alt="Divisor de secciones">
+    </div>
+    <br><br><br><br><br>
+    <div class="footer-container">
+      <div class="footer-left">
+        <div class="footer-logo">
+          <img src="img/image__2_-removebg-preview.png" alt="Logo">
+        </div>
+        <div class="footer-social">
+          <a href="#"><img src="img/facebook.png" alt="Facebook"></a>
+          <a href="#"><img src="img/twitter.png" alt="Twitter"></a>
+          <a href="#"><img src="img/instagram.png" alt="Instagram"></a>
+        </div>
+      </div>
+      <div class="footer-columns">
+        <div class="footer-column">
+          <h2>ADMINISTRACIÓN</h2>
+          <ul>
+            <li><a href="titulos.html">Títutlos</a></li>
+            <li><a href="matriculas.html">Matrículas</a></li>
+            <li><a href="becas.html">Becas</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h2>ACCESOS</h2>
+          <ul>
+            <li><a href="https://itponiente.com/moodle/login/index.php">Aula Virtual</a></li>
+            <li><a href="orientacion.html">Orientación</a></li>
+            <li><a href="centro.html">Centro</a></li>
+            
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h2>CONTACTOS</h2>
+          <ul>
+            <li><img src="img/email.png" alt="Correo"> correo@example.com</li>
+            <br>
+            <li><img src="img/phone.png" alt="Teléfono"> +34 123 456 789</li>
+            <br>
+            <li><img src="img/location.png" alt="Ubicación"> Calle Ejemplo 123, Ciudad, País</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  
+  <!------------------------------------------------------------------------------------------------------------------->
+
+
+  <button class="scroll-to-top" onclick="scrollToTop()">⬆</button>
+
+
+
+
+  <script src="js/javaScript.js"></script>
+</body>
+</html>

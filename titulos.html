@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titulos</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <style>
+    .image-container{
+  position: relative; /*Para posicionar el texto sobre la imagen*/
+  width: 100%;
+  height: 300px; /*Altura fija para la imagen*/
+  overflow: hidden;
+}
+
+.image-container img{
+  width: 100%;
+  height: 100%; /*Ajusta la altura al 100% del contenedor*/
+  object-fit: cover; /*Mantiene la proporción de la imagen y llena el contenedor*/
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /*Filtro negro oscuro con opacidad*/
+}
+
+.overlay-text{
+  position: absolute;
+  top: 50%;
+  left: 10%; /*Ajusta este valor para centrar el texto a la izquierda*/
+  transform: translateY(-50%); /*Centra verticalmente el texto*/
+  color: white;
+  text-align: left; /*Alinea el texto a la izquierda*/
+}
+
+.overlay-text h1{
+    font-size: pt;
+  font-size: 36px;
+  margin: 0;
+}
+
+
+
+
+
+
+.container_uno{
+  font-size: large;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-content, .right-content{
+    width: 48%; /*Ajusta este valor si deseas un ancho diferente*/
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /*Añade un poco de sombra para hacer que los divs destaquen*/
+    font-family: roboto;
+}
+
+.left-content{
+    margin-right: 2%; /*Añade un pequeño margen a la derecha del div izquierdo*/
+}
+
+.right-content{
+    margin-left: 2%; /*Añade un pequeño margen a la izquierda del div derecho*/
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h3{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+p, ul{
+    text-align: justify;
+}
+
+ul{
+    list-style-type: disc;
+    margin-left: 20px; /*Ajusta este valor para tabular más el contenido de la lista*/
+}
+
+
+
+
+
+
+.exencion-tasas{
+    padding: 20px;
+    font-family: roboto;
+    text-align: center;
+    margin-left: 50px; /*Ajusta este valor para separar más del lado izquierdo*/
+}
+
+.exencion-tasas p{
+    text-align: justify;
+    display: inline-block;
+    max-width: 2400px; /*Ajusta el ancho máximo del párrafo*/
+}
+
+
+
+
+
+
+.botones{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botones button{
+    margin: 5px 0;
+    padding: 10px 20px;
+    border: none;
+    background-color: #358826;
+    color: white;
+    cursor: pointer;
+}
+
+.botones button:hover{
+    background-color: #4cb936;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <!------------------------------------------------------------------------------------------------------------------->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="index.html"><img src="img/image (1).png" alt="Logo"></a>
+        </div>
+        <nav>
+          <div class="dropdown">
+            <a href="centro.html">Nuestro Centro</a>
+            <div class="dropdown-content">
+              <a href="centro.html">Centro</a>
+              <a href="aulas.html">Aulas</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="#">Ciclos Educativos</a>
+            <div class="dropdown-content">
+              <a href="eso.html">ESO</a>
+              <a href="bachillerato.html">Bachillerato</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="#">Administración</a>
+            <div class="dropdown-content">
+              <a href="organigrama.html">Organigrama</a>
+              <a href="plan_estudio.html">Plan de Estudios</a>
+              <a href="becas.html">Becas</a>
+              <a href="matriculas.html">Matrículas</a>
+              <a href="titulos.html">Títulos</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="orientaciones.html">Orientación</a>
+            <div class="dropdown-content">
+              <a href="departamentos.html">Departamentos</a>
+              <a href="orientaciones.html">Orientaciones</a>
+            </div>
+          </div>
+          <a href="index.html#contacto">Contactos</a>
+          <a href="https://itponiente.com/moodle/login/index.php">Aula Virtual</a>
+        </nav>
+      </div>
+    </header>
+
+  
+  
+  <div class="image-container">
+    <img src="img/administra.png" alt="Imagen horizontal">
+    <div class="overlay"></div>
+    <div class="overlay-text">
+      <h1><u>Títulos</u></h1>
+    </div>
+  </div>
+  
+  <br><br><br>
+  <div class="container_uno">
+    <div class="left-content">
+        <h2>CERTIFICADOS</h2>
+        <p>Los certificados escolares son documentos oficiales que acreditan la finalización de estudios o la adquisición de competencias específicas durante la etapa educativa. Estos certificados pueden incluir títulos básicos como el de Educación Secundaria, el de Bachillerato o diplomas de programas complementarios en idiomas, tecnología, arte o deportes.
+
+          <br><br>Son esenciales para acceder a niveles educativos superiores, validar habilidades en el ámbito laboral o demostrar logros académicos y personales. Los certificados representan el esfuerzo, aprendizaje y crecimiento del estudiante, siendo una herramienta clave para su desarrollo futuro.
+          .</p>
+          <br><br><br>
+        <p><u>+Se deberá realizar una instancia de EXPONE/SOLICITA donde el interesado o la interesada indique:</u></p>
+        <ul>
+            <li>Nombre, apellidos y DNI</li>
+            <li>Tipo de certificación o certificado que se solicita</li>
+            <li>Fecha concreta de realización de estudios, en su caso</li>
+        </ul>
+        <br><br>
+        <p><u>+EL PLAZO ESTABLECIDO PARA LA GESTIÓN EN LA EXPEDICIÓN DE CERTIFICADO ES DE TRES DÍAS HÁBILES APROXIMADAMENTE. TIPOS DE CERTIFICADOS Y CERTIFICACIONES:</u></p>
+        <ul>
+            <li>Calificaciones definitivas</li>
+            <li>Certificado de escolarización</li>
+        </ul>
+        <br>
+        <p style="background-color: yellow;">---PARA OTRAS CERTIFICACIONES PÓNGASE EN CONTACTO CON EL CENTRO A TRAVÉS DEL CORREO ELECTRÓNICO---</p>
+    </div>
+    <div class="right-content">
+        <h2>TÍTULO DE ESO Y BACHILLERATO</h2>
+        <p>El Título de Educación Secundaria Obligatoria (ESO) certifica que un estudiante ha completado con éxito la educación secundaria básica, adquiriendo competencias fundamentales en áreas como matemáticas, lengua, ciencias y humanidades. Es un requisito esencial para continuar estudios en Bachillerato, formación profesional o ingresar al mercado laboral. Este título es el primer paso hacia la especialización académica y profesional.
+          
+          <br><br>El Título de Bachillerato acredita la finalización de una etapa educativa más avanzada, donde el estudiante ha profundizado en un itinerario específico (Ciencias, Humanidades, Artes o Ciencias Sociales). Este título no solo abre las puertas a estudios superiores universitarios y de formación profesional avanzada, sino que también garantiza una preparación sólida, fomentando el pensamiento crítico, la capacidad de análisis y la autonomía académica.</p>
+
+          <br><br><br>
+        <h3>ESO</h3>
+        <p>Deberán solicitarlo telemáticamente a través del siguiente enlace de la Junta de Andalucía</p>
+        <div class="botones">
+        <button id="botones" onclick="window.location.href='https://www.juntadeandalucia.es/educacion/becasweb/consultawebbecas/'">SECRETARÍA VIRTUAL PARA LA EXPEDICIÓN DE TÍTULOS</button>
+        </div>
+        <br><br>
+        
+        <h3>Bachillerato</h3>
+        <p>Deberán pasar por la Secretaría del Centro y recoger el Impreso de Solicitud de Título, o descargado desde esta web junto con el Impreso para el abono de la tasa correspondiente (Modelo 046), que podrá abonar con tarjeta de crédito de manera online o deberá ingresarse en cualquier Banco o Caja de Ahorros, según la cuantía que corresponde con la siguiente tabla de precios públicos.</p>
+      <div class="botones">
+        <button id="botones" onclick="window.location.href='https://www.juntadeandalucia.es/educacion/becasweb/consultawebbecas/'">Acceso de solicitud</button>
+      </div>
+    </div>
+</div>
+
+  
+  
+  <section class="form-section">
+    <div class="image-divider">
+      <img src="img/divisor.png" alt="Divisor de secciones">
+    </div>
+    <div class="info-container">
+      <div class="exencion-tasas">
+        <p>Estarán exentos del pago de la tasa los siguientes solicitantes que tengan reconocida su condición, siempre que quede acreditado de conformidad con la normativa aplicable: <br>a) El alumnado miembro de familias numerosas de la categoría especial. <br>b) El alumnado que, como consecuencia de actos terroristas, haya sufrido daños personales que sean de especial trascendencia, o que lo inhabiliten para el ejercicio de su profesión habitual, o cuyos familiares hasta segundo grado de consanguinidad, tutores o guardadores, hayan sufrido dichos daños. <br>c) Las víctimas de violencia de género, doméstica o de ambas. A estos efectos, tendrán la consideración de víctima de violencia doméstica las personas a que se refiere el artículo 173.2 de la ley Orgánica 10/1995, de 23 de noviembre, del Código Penal, que cuenten con orden de protección en vigor e inscrita en el Registro Central para la Protección de las Víctimas de la Violencia Doméstica, o con sentencia judicial firme por tal motivo en los últimos diez años. <br>d) Las personas con discapacidad, en un grado igual o superior al 33%. <br>e) Las personas beneficiarias de la prestación del ingreso mínimo vital a quienes se reconozca dicha condición de conformidad con lo dispuesto en la Ley 19/2021, de 20 de diciembre, por la que se establece el ingreso mínimo vital, o norma que la sustituya, las beneficiarias de la Renta Mínima de Inserción Social en Andalucía, a quienes se reconozca dicha condición de acuerdo con lo dispuesto en el Decreto-Ley 3/2017, de 19 de diciembre, por el que se regula la Renta Mínima de Inserción Social en Andalucía, o norma que lo sustituya, o las beneficiarias de ambas prestaciones.</p>
+    </div>
+    
+      
+    </div>
+    
+  </section>
+
+
+
+
+<!------------------------------------------------------------------------------------------------------------------->
+
+<footer>
+  <div class="image-divider">
+    <img style="position: absolute; top: -40px;" src="img/divisor2.png" alt="Divisor de secciones">
+  </div>
+  <br><br><br><br><br>
+  <div class="footer-container">
+    <div class="footer-left">
+      <div class="footer-logo">
+        <img src="img/image__2_-removebg-preview.png" alt="Logo">
+      </div>
+      <div class="footer-social">
+        <a href="#"><img src="img/facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="img/twitter.png" alt="Twitter"></a>
+        <a href="#"><img src="img/instagram.png" alt="Instagram"></a>
+      </div>
+    </div>
+    <div class="footer-columns">
+      <div class="footer-column">
+        <h2>ADMINISTRACIÓN</h2>
+        <ul>
+          <li><a href="titulos.html">Títutlos</a></li>
+          <li><a href="matriculas.html">Matrículas</a></li>
+          <li><a href="becas.html">Becas</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h2>ACCESOS</h2>
+        <ul>
+          <li><a href="https://itponiente.com/moodle/login/index.php">Aula Virtual</a></li>
+          <li><a href="orientacion.html">Orientación</a></li>
+          <li><a href="centro.html">Centro</a></li>
+          
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h2>CONTACTOS</h2>
+        <ul>
+          <li><img src="img/email.png" alt="Correo"> correo@example.com</li>
+          <br>
+          <li><img src="img/phone.png" alt="Teléfono"> +34 123 456 789</li>
+          <br>
+          <li><img src="img/location.png" alt="Ubicación"> Calle Ejemplo 123, Ciudad, País</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+  
+  <!------------------------------------------------------------------------------------------------------------------->
+
+
+  <button class="scroll-to-top" onclick="scrollToTop()">⬆</button>
+
+
+
+
+  <script src="js/javaScript.js"></script>
+</body>
+</html>

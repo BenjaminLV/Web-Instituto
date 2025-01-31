@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Estudio</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <style>
+    .image-container{
+  position: relative; /*Para posicionar el texto sobre la imagen*/
+  width: 100%;
+  height: 300px; /*Altura fija para la imagen*/
+  overflow: hidden;
+}
+
+.image-container img{
+  width: 100%;
+  height: 100%; /*Ajusta la altura al 100% del contenedor*/
+  object-fit: cover; /*Mantiene la proporción de la imagen y llena el contenedor*/
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /*Filtro negro oscuro con opacidad*/
+}
+
+.overlay-text{
+  position: absolute;
+  top: 50%;
+  left: 10%; /*Ajusta este valor para centrar el texto a la izquierda*/
+  transform: translateY(-50%); /*Centra verticalmente el texto*/
+  color: white;
+  text-align: left; /*Alinea el texto a la izquierda*/
+}
+
+.overlay-text h1{
+    font-size: pt;
+  font-size: 36px;
+  margin: 0;
+}
+
+
+
+
+
+
+.plan-de-estudios{
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    
+}
+
+.plan-de-estudios h2{
+    font-family: nunito;
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.plan-de-estudios p{
+    font-size: large;
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.imagenes{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.imagen img{
+    width: 900px;
+    height: 550px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+
+
+
+
+
+
+.documentacion-centro{
+    padding: 20px;
+    font-family: roboto;
+    margin-left: 50px; /*Ajusta este valor para separar más del lado izquierdo*/
+}
+
+.documentacion-centro h1{
+    padding-right: 100px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.documentacion-centro .reglamentos{
+    margin-top: 20px;
+}
+
+.documentacion-centro h2{
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.documentacion-centro ul{
+    list-style-type: disc;
+    margin-left: 20px; /*Ajusta este valor para tabular más el contenido de la lista*/
+}
+
+.documentacion-centro p{
+    margin-top: 10px;
+    text-align: left;
+}
+
+
+
+#uno{
+    padding-left: 160px;
+}
+#dos{
+    padding-left: 160px;
+}
+
+
+
+
+
+
+.image-with-text{
+  position: relative;
+  width: 100%;
+  margin: 40px 0; /*Ajustado para separación adecuada*/
+  overflow: hidden; /*Para evitar que el contenido sobresalga cuando se agranda*/
+}
+
+.image-with-text a{
+  display: block; /*Hacer que el enlace ocupe todo el bloque*/
+}
+
+.image-with-text img{
+  width: 100%;
+  height: 300px; /*Ajustado para menor altura*/
+  object-fit: cover;
+  filter: brightness(50%);
+  transition: transform 0.3s ease; /*Transición suave para el efecto de agrandamiento*/
+}
+
+.image-with-text img:hover{
+  transform: scale(1.05); /*Agrandar la imagen al 105%*/
+}
+
+
+    </style>
+</head>
+<body>
+    <!------------------------------------------------------------------------------------------------------------------->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="index.html"><img src="img/image (1).png" alt="Logo"></a>
+        </div>
+        <nav>
+          <div class="dropdown">
+            <a href="centro.html">Nuestro Centro</a>
+            <div class="dropdown-content">
+              <a href="centro.html">Centro</a>
+              <a href="aulas.html">Aulas</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="#">Ciclos Educativos</a>
+            <div class="dropdown-content">
+              <a href="eso.html">ESO</a>
+              <a href="bachillerato.html">Bachillerato</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="#">Administración</a>
+            <div class="dropdown-content">
+              <a href="organigrama.html">Organigrama</a>
+              <a href="plan_estudio.html">Plan de Estudios</a>
+              <a href="becas.html">Becas</a>
+              <a href="matriculas.html">Matrículas</a>
+              <a href="titulos.html">Títulos</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="orientaciones.html">Orientación</a>
+            <div class="dropdown-content">
+              <a href="departamentos.html">Departamentos</a>
+              <a href="orientaciones.html">Orientaciones</a>
+            </div>
+          </div>
+          <a href="index.html#contacto">Contactos</a>
+          <a href="https://itponiente.com/moodle/login/index.php">Aula Virtual</a>
+        </nav>
+      </div>
+    </header>
+
+  
+  
+  <div class="image-container">
+    <img src="img/administra.png" alt="Imagen horizontal">
+    <div class="overlay"></div>
+    <div class="overlay-text">
+      <h1><u>Plan de Estudios</u></h1>
+    </div>
+  </div>
+  
+  
+  <br><br>
+  <div class="plan-de-estudios">
+    <h2>Plan de Estudios</h2>
+    
+    <p>El Plan de Centro establece la misión, visión y valores del centro, define su estructura organizativa (dirección, administración y áreas principales) y detalla los recursos humanos y materiales disponibles. Sus objetivos incluyen mejorar la comunicación interna, fomentar la participación de la comunidad y optimizar servicios e infraestructura.</p>
+    <br>
+    <div class="imagenes">
+        <div class="imagen"><img src="img/Plan_de_estudio.png" alt=""></div>
+    </div>
+    <br>
+    <p>Para alcanzarlos, se ejecutarán acciones específicas con responsables designados y plazos claros. La evaluación se realizará mediante indicadores como satisfacción de usuarios y cumplimiento de actividades, mientras que la comunicación interna y externa se gestionará mediante reuniones, boletines y redes sociales, garantizando transparencia y eficacia en su desarrollo.</p>
+    </div>
+
+
+
+
+
+
+  
+  
+  
+  <section class="form-section">
+    <div class="image-divider">
+      <img src="img/divisor.png" alt="Divisor de secciones">
+    </div>
+    <div class="info-container">
+        <div class="documentacion-centro" >
+            <h1>*Documentación sobre el Centro*</h1>
+            <br>
+            <div class="reglamentos">
+                <h2><u>+Reglamentos y Normativas</u></h2>
+                <ul>
+                    <li>Reglamento Interno: Normas de convivencia para estudiantes, docentes y personal administrativo.</li>
+                    <li>Política de Inclusión: Estrategias para garantizar la igualdad de oportunidades.</li>
+                    <li>Normativa de Evaluación: Criterios y métodos de evaluación del desempeño estudiantil.</li>
+                </ul>
+                <p>Horarios:<br>-Entrada: 8:00 AM<br>-Salida: 3:00 PM</p>
+            </div>
+        </div>
+        
+        
+        <br><br>
+        <div class="documentacion-centro" id="uno">
+            <h2><u>+Recursos e Infraestructura</u></h2>
+            <div class="contenido">
+                <ul>
+                    <li>Aulas: 12 aulas equipadas con pizarras digitales.</li>
+                    <li>Laboratorios: 1 laboratorio de ciencias y 1 de informática.</li>
+                    <li>Biblioteca: Espacio con 2,000 libros y recursos digitales.</li>
+                    <li>Áreas deportivas: Cancha de fútbol y gimnasio.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <br><br>
+        <div class="documentacion-centro" >
+            <h2><u>+Plan de Actividades</u></h2>
+            <div class="contenido">
+                <h3>Anualidades</h3>
+                <ul>
+                    <li>Día de la Ciencia: Experimentos y talleres para estudiantes.</li>
+                    <li>Feria Cultural: Promoción de la diversidad y tradiciones locales.</li>
+                </ul>
+                <br>
+                <h3>Programas Complementarios</h3>
+                <ul>
+                    <li>Clases extracurriculares de arte y música.</li>
+                    <li>Talleres de habilidades blandas y liderazgo.</li>
+                </ul>
+            </div>
+        </div>
+        
+
+
+
+        <br><br>
+        <div class="documentacion-centro" id="dos">
+            <h2><u>+Sistema de Comunicación</u></h2>
+            <div class="contenido">
+                <h3>Interna</h3>
+                <ul>
+                    <li>Boletines mensuales.</li>
+                    <li>Reuniones de personal (cada quincena).</li>
+                </ul>
+                <br>
+                <h3>Externa</h3>
+                <ul>
+                    <li>Página web oficial y redes sociales para informar a la comunidad.</li>
+                    <li>Cartas y circulares para padres y tutores.</li>
+                </ul>
+            </div>
+        </div>
+        
+
+
+
+        <br><br>
+        <div class="documentacion-centro" id="tres">
+            <h2><u>+Evaluación y Seguimiento</u></h2>
+            <div class="contenido">
+                <h3>Indicadores</h3>
+                <ul>
+                    <li>Rendimiento académico</li>
+                    <li>Participación en actividades</li>
+                    <li>Satisfacción de la comunidad</li>
+                </ul>
+                <br>
+                <h3>Frecuencia</h3>
+                <ul>
+                    <li>Evaluaciones trimestrales</li>
+                    <li>Reuniones de análisis de resultados</li>
+                </ul>
+            </div>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="image-with-text">
+            <a href="centro.html#elegir">
+              <img src="img/espaldas.jpg" alt="Imagen con texto">
+              <div class="text-overlay">¿Por qué elegirnos?</div>
+            </a>
+          </div>
+
+
+    </div>
+    
+  </section>
+
+
+
+
+<!------------------------------------------------------------------------------------------------------------------->
+<footer>
+    <div class="image-divider">
+      <img style="position: absolute; top: -40px;" src="img/divisor2.png" alt="Divisor de secciones">
+    </div>
+    <br><br><br><br><br>
+    <div class="footer-container">
+      <div class="footer-left">
+        <div class="footer-logo">
+          <img src="img/image__2_-removebg-preview.png" alt="Logo">
+        </div>
+        <div class="footer-social">
+          <a href="#"><img src="img/facebook.png" alt="Facebook"></a>
+          <a href="#"><img src="img/twitter.png" alt="Twitter"></a>
+          <a href="#"><img src="img/instagram.png" alt="Instagram"></a>
+        </div>
+      </div>
+      <div class="footer-columns">
+        <div class="footer-column">
+          <h2>ADMINISTRACIÓN</h2>
+          <ul>
+            <li><a href="titulos.html">Títutlos</a></li>
+            <li><a href="matriculas.html">Matrículas</a></li>
+            <li><a href="becas.html">Becas</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h2>ACCESOS</h2>
+          <ul>
+            <li><a href="https://itponiente.com/moodle/login/index.php">Aula Virtual</a></li>
+            <li><a href="orientacion.html">Orientación</a></li>
+            <li><a href="centro.html">Centro</a></li>
+            
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h2>CONTACTOS</h2>
+          <ul>
+            <li><img src="img/email.png" alt="Correo"> correo@example.com</li>
+            <br>
+            <li><img src="img/phone.png" alt="Teléfono"> +34 123 456 789</li>
+            <br>
+            <li><img src="img/location.png" alt="Ubicación"> Calle Ejemplo 123, Ciudad, País</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!------------------------------------------------------------------------------------------------------------------->
+
+
+  <button class="scroll-to-top" onclick="scrollToTop()">⬆</button>
+
+
+
+
+  <script src="js/javaScript.js"></script>
+</body>
+</html>

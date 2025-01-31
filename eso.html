@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESO</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <style>
+    .image-container{
+  position: relative; 
+  width: 100%;
+  height: 300px; 
+  overflow: hidden;
+}
+
+.image-container img{
+  width: 100%;
+  height: 100%; 
+  object-fit: cover; 
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.overlay-text{
+  position: absolute;
+  top: 50%;
+  left: 10%; 
+  transform: translateY(-50%); 
+  color: white;
+  text-align: left; 
+}
+
+.overlay-text h1{
+    font-size: pt;
+  font-size: 36px;
+  margin: 0;
+}
+
+
+
+
+
+
+.centered-section{
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px; 
+}
+
+.centered-section h1{
+    font-family: pt;
+    margin-bottom: 20px;
+}
+
+.centered-section h3{
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+.table-section{
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px; 
+}
+
+.table-section h2{
+    margin-bottom: 20px;
+}
+
+.table-section table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto; 
+}
+
+.table-section th, .table-section td{
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.table-section tr:nth-child(even){
+    background-color: #f9f9f9;
+}
+
+.table-section tr:hover{
+    background-color: #f1f1f1;
+}
+
+
+
+
+
+
+
+
+.image-with-text{
+  position: relative;
+  width: 100%;
+  margin: 40px 0; /*Ajustado para separación adecuada*/
+  overflow: hidden; /*Para evitar que el contenido sobresalga cuando se agranda*/
+}
+
+.image-with-text a{
+  display: block; /*Hacer que el enlace ocupe todo el bloque*/
+}
+
+.image-with-text img{
+  width: 100%;
+  height: 300px; /*Ajustado para menor altura*/
+  object-fit: cover;
+  filter: brightness(50%);
+  transition: transform 0.3s ease; /*Transición suave para el efecto de agrandamiento*/
+}
+
+.image-with-text img:hover{
+  transform: scale(1.05); 
+}
+    </style>
+</head>
+<body>
+    <!------------------------------------------------------------------------------------------------------------------->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="index.html"><img src="img/image (1).png" alt="Logo"></a>
+        </div>
+        <nav>
+          <div class="dropdown">
+            <a href="centro.html">Nuestro Centro</a>
+            <div class="dropdown-content">
+              <a href="centro.html">Centro</a>
+              <a href="aulas.html">Aulas</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="#">Ciclos Educativos</a>
+            <div class="dropdown-content">
+              <a href="eso.html">ESO</a>
+              <a href="bachillerato.html">Bachillerato</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="#">Administración</a>
+            <div class="dropdown-content">
+              <a href="organigrama.html">Organigrama</a>
+              <a href="plan_estudio.html">Plan de Estudios</a>
+              <a href="becas.html">Becas</a>
+              <a href="matriculas.html">Matrículas</a>
+              <a href="titulos.html">Títulos</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="orientaciones.html">Orientación</a>
+            <div class="dropdown-content">
+              <a href="departamentos.html">Departamentos</a>
+              <a href="orientaciones.html">Orientaciones</a>
+            </div>
+          </div>
+          <a href="index.html#contacto">Contactos</a>
+          <a href="https://itponiente.com/moodle/login/index.php">Aula Virtual</a>
+        </nav>
+      </div>
+    </header>
+
+  
+  
+  <div class="image-container">
+    <img src="img/estudiantes.jpg" alt="Imagen horizontal">
+    <div class="overlay"></div>
+    <div class="overlay-text">
+      <h1><u>Educación Secundaria Obligatoria</u></h1>
+    </div>
+  </div>
+  
+  <br><br>
+  <div class="centered-section">
+    <h1>Educación Secundaría  de 12 a los 16 años</h1>
+    <h3>La <u>Educación Secundaria Obligatoria (ESO)</u> es una etapa fundamental que combina formación académica y personal, preparando a los estudiantes para futuros estudios o el mundo laboral, mientras fomenta valores de convivencia y desarrollo integral.</h3>
+</div>
+
+  
+  
+  <section class="form-section">
+    <div class="image-divider">
+      <img src="img/divisor.png" alt="Divisor de secciones">
+    </div>
+    <div class="info-container">
+        <div class="table-section">
+            <h2>Asignaturas por Curso</h2>
+            <table border="1">
+                <tr style="background-color: #144734;">
+                    <th>Asignaturas</th>
+                    <th>1º de ESO</th>
+                    <th>2º de ESO</th>
+                    <th>3º de ESO</th>
+                    <th>4º de ESO</th>
+                </tr>
+                <tr>
+                    <td>Matemáticas</td>
+                    <td>✔</td>
+                    <td>✔</td>
+                    <td>✔</td>
+                    <td>✔</td>
+                </tr>
+                <tr>
+                    <td>Lengua y Literatura</td>
+                    <td>✔</td>
+                    <td>✔</td>
+                    <td>✔</td>
+                    <td>✔</td>
+                </tr>
+                <tr>
+                    <td>Biología y Geología</td>
+                    <td>✔</td>
+                    <td>✔</td>
+                    <td>✔</td>
+                    <td>✔</td>
+                </tr>
+                <tr>
+                    <td>Inglés</td>
+                    <td>✔</td>
+                    <td>✔</td>
+                    <td>✔</td>
+                    <td>✔</td>
+                </tr>
+                <tr>
+                    <td>Historia y Geografía</td>
+                    <td>✔</td>
+                    <td>✔</td>
+                    <td>✔</td>
+                    <td>✔</td>
+                </tr>
+                <tr style="background-color: #f0f0d0;">
+                    <td>Francés</td>
+                    <td></td>
+                    <td></td>
+                    <td>✔</td>
+                    <td>✔</td>
+                </tr>
+                <tr style="background-color: #f0f0d0;">
+                    <td>Alemán</td>
+                    <td></td>
+                    <td></td>
+                    <td>✔</td>
+                    <td>✔</td>
+                </tr>
+                <tr>
+                    <td>Educación Física</td>
+                    <td>✔</td>
+                    <td>✔</td>
+                    <td>✔</td>
+                    <td>✔</td>
+                </tr>
+                <tr>
+                    <td>Música</td>
+                    <td>✔</td>
+                    <td>✔</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Física y Química</td>
+                    <td></td>
+                    <td></td>
+                    <td>✔</td>
+                    <td>✔</td>
+                </tr>
+                <tr>
+                    <td>Geología</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>✔</td>
+                </tr>
+                <tr>
+                    <td>Religión o Valores Éticos</td>
+                    <td>✔</td>
+                    <td>✔</td>
+                    <td>✔</td>
+                    <td>✔</td>
+                </tr>
+            </table>
+        </div>
+        
+
+
+        <br><br><br><br><br>
+
+
+
+        <div class="image-with-text">
+            <a href="centro.html#elegir">
+              <img src="img/espaldas.jpg" alt="Imagen con texto">
+              <div class="text-overlay">¿Por qué elegirnos?</div>
+            </a>
+          </div>
+    </div>
+    
+  </section>
+
+
+
+
+<!------------------------------------------------------------------------------------------------------------------->
+<footer>
+  <div class="image-divider">
+    <img style="position: absolute; top: -40px;" src="img/divisor2.png" alt="Divisor de secciones">
+  </div>
+  <br><br><br><br><br>
+  <div class="footer-container">
+    <div class="footer-left">
+      <div class="footer-logo">
+        <img src="img/image__2_-removebg-preview.png" alt="Logo">
+      </div>
+      <div class="footer-social">
+        <a href="#"><img src="img/facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="img/twitter.png" alt="Twitter"></a>
+        <a href="#"><img src="img/instagram.png" alt="Instagram"></a>
+      </div>
+    </div>
+    <div class="footer-columns">
+      <div class="footer-column">
+        <h2>ADMINISTRACIÓN</h2>
+        <ul>
+          <li><a href="titulos.html">Títutlos</a></li>
+          <li><a href="matriculas.html">Matrículas</a></li>
+          <li><a href="becas.html">Becas</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h2>ACCESOS</h2>
+        <ul>
+          <li><a href="https://itponiente.com/moodle/login/index.php">Aula Virtual</a></li>
+          <li><a href="orientacion.html">Orientación</a></li>
+          <li><a href="centro.html">Centro</a></li>
+          
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h2>CONTACTOS</h2>
+        <ul>
+          <li><img src="img/email.png" alt="Correo"> correo@example.com</li>
+          <br>
+          <li><img src="img/phone.png" alt="Teléfono"> +34 123 456 789</li>
+          <br>
+          <li><img src="img/location.png" alt="Ubicación"> Calle Ejemplo 123, Ciudad, País</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+  
+
+  
+  <!------------------------------------------------------------------------------------------------------------------->
+
+
+  <button class="scroll-to-top" onclick="scrollToTop()">⬆</button>
+
+
+
+
+  <script src="js/javaScript.js"></script>
+</body>
+</html>

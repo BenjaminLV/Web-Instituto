@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <style>
+
+    
+body, html{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; 
+}
+
+.image-container{
+  position: relative; 
+  width: 100%;
+  height: 300px; 
+  overflow: hidden;
+}
+
+.image-container img{
+  width: 100%;
+  height: 100%; 
+  object-fit: cover; 
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.overlay-text{
+  position: absolute;
+  top: 50%;
+  left: 10%; 
+  transform: translateY(-50%); 
+  color: white;
+  text-align: left; 
+}
+
+.overlay-text h1{
+  font-size: 36px;
+  margin: 0;
+}
+
+.content-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.text-and-images{
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  position: relative;
+}
+
+.text-container{
+  flex: 1;
+  margin-left: 150px; 
+}
+
+.images-container{
+  position: absolute;
+  right: 250px; 
+  top: 0;
+}
+
+.images-container .foto1{
+  position: relative;
+  width: 400px; 
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.images-container .foto2{
+  position: relative;
+  top: 50px;
+  left: 50px;
+  width: 300px; 
+  height: auto;
+  margin-top: 80px; 
+  margin-left: -150px; 
+}
+
+.full-width-paragraph{
+  width: 100%;
+  margin-top: 80px; 
+  margin-left: 150px; 
+}
+
+.history-section{
+  display: flex;
+  max-width: 1000px; 
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 0 auto; 
+  background-color: transparent; 
+}
+
+.history-photo{
+  position: relative;
+  left: -10px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px; 
+  width: 200px;
+  
+  object-fit: cover;
+}
+
+.history-photo img{
+  max-height: 100%;
+  width: auto;
+}
+
+.history-content{
+  flex: 2;
+  margin-left: 200px;
+}
+
+.history-content h1{
+  text-align: center;
+  margin-top: 0;
+}
+
+.history-content p{
+  font-size: medium;
+  text-align: justify; 
+  font-family: roboto;
+}
+
+.thin-line{
+  border: 0;
+  border-top: 1px solid #000; 
+  margin: 100px auto; 
+  width: 50%; 
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <!------------------------------------------------------------------------------------------------------------------->
+    <header>
+        <div class="container">
+          <div class="logo">
+            <a href="index.html"><img src="img/image (1).png" alt="Logo"></a>
+          </div>
+          <nav>
+            <div class="dropdown">
+              <a href="centro.html">Nuestro Centro</a>
+              <div class="dropdown-content">
+                <a href="centro.html">Centro</a>
+                <a href="aulas.html">Aulas</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a href="#">Ciclos Educativos</a>
+              <div class="dropdown-content">
+                <a href="eso.html">ESO</a>
+                <a href="bachillerato.html">Bachillerato</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a href="#">Administración</a>
+              <div class="dropdown-content">
+                <a href="organigrama.html">Organigrama</a>
+                <a href="plan_estudio.html">Plan de Estudios</a>
+                <a href="becas.html">Becas</a>
+                <a href="matriculas.html">Matrículas</a>
+                <a href="titulos.html">Títulos</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a href="orientaciones.html">Orientación</a>
+              <div class="dropdown-content">
+                <a href="departamentos.html">Departamentos</a>
+                <a href="orientaciones.html">Orientaciones</a>
+              </div>
+            </div>
+            <a href="index.html#contacto">Contactos</a>
+            <a href="https://itponiente.com/moodle/login/index.php">Aula Virtual</a>
+          </nav>
+        </div>
+      </header>
+
+  
+  
+  <div class="image-container">
+    <img src="img/colegio.png" alt="Imagen horizontal">
+    <div class="overlay"></div>
+    <div class="overlay-text">
+      <h1><u>Centro</u></h1>
+    </div>
+  </div>
+  
+  <br><br><br><br>
+  
+  <div style="text-align: center; background-color: rgba(255, 255, 255, 0.683);">
+    <h1 style="font-family:Arial, Helvetica, sans-serif;">En <span style="font-family: pt;">EMMANUEL</span> tenemos nuestros propios pilares de la educación</h1>
+  </div>
+
+  <div class="content-wrapper">
+
+    <div class="box">
+      <img src="img/medalla.png" alt="">
+      <h3>Cladidad Académica</h3><p>En nuestro instituto, la Calidad Académica es el eje central de nuestra misión educativa. Nos esforzamos por ofrecer una enseñanza de excelencia basada en metodologías actualizadas, profesores altamente capacitados y programas académicos que inspiran el pensamiento crítico, la creatividad y la curiosidad. <br><br> Nuestro compromiso es preparar a los estudiantes no solo para los retos académicos del presente, sino también para destacar en el mundo profesional y contribuir significativamente a la sociedad.</p>
+    </div>
+    <div class="box">
+      <img src="img/puzzle.png" alt="">
+      <h3>Infraestructura y Recursos</h3><p>Creemos que un entorno adecuado potencia el aprendizaje, por lo que nuestra Infraestructura y Recursos están diseñados para proporcionar comodidad, funcionalidad y tecnología de punta. <br><br> Contamos con aulas modernas, laboratorios especializados, bibliotecas bien equipadas y espacios deportivos y recreativos que fomentan el desarrollo integral. Nuestro objetivo es que cada estudiante tenga acceso a las herramientas necesarias para alcanzar su máximo potencial.</p>
+    </div>
+    <div class="box">
+      <img src="img/gorro.png" alt="">
+      <h3>Formación Integral del Estudiante</h3><p>Nuestro enfoque en la Formación Integral del Estudiante va más allá de los aspectos académicos. Nos esforzamos por formar ciudadanos responsables, éticos y comprometidos, promoviendo valores como el respeto, la empatía y la responsabilidad social. <br><br> A través de actividades extracurriculares, programas de orientación y proyectos solidarios, aseguramos que nuestros alumnos se desarrollen plenamente en los aspectos intelectual, emocional y social.</p>
+    </div>
+    <div class="box">
+      <img src="img/manos.png" alt="">
+      <h3>Comunidad y Participación</h3><p>Somos una institución que fomenta una Comunidad y Participación activa entre estudiantes, familias y docentes. Valoramos el diálogo abierto y la colaboración, porque creemos que juntos podemos construir un entorno más enriquecedor y significativo. <br><br> A través de eventos, actividades culturales y espacios de integración, fortalecemos los lazos que nos unen como una familia educativa comprometida con el bienestar común.</p>
+    </div>
+    <div class="rectangle">
+      <h2>Bienestar Emocional y Motivación (La base de nuestros pilares)</h2><p>En la base de todos nuestros esfuerzos se encuentra el Bienestar Emocional y la Motivación de cada estudiante. Reconocemos la importancia de un ambiente seguro, positivo y estimulante donde los alumnos se sientan valorados y apoyados. Nuestro equipo está dedicado a brindar herramientas para manejar las emociones, cultivar la resiliencia y mantener una actitud optimista hacia los desafíos de la vida, promoviendo así un aprendizaje más efectivo y una vida más plena.</p>
+    </div>
+  </div>
+  
+  
+  <section class="form-section">
+    <div class="image-divider">
+      <img src="img/divisor.png" alt="Divisor de secciones">
+    </div>
+    <div class="info-container">
+      
+
+
+        <div class="content-container">
+            <h1 style="margin-left: 180px; font-family: pt;" id="elegir">¿Por qué elegirnos?</h1> 
+            <div class="text-and-images">
+              <div class="text-container">
+                <p><br>En nuestro colegio, creemos que la educación va más allá del aprendizaje en el aula. Ofrecemos un modelo <br>educativo centrado en la excelencia académica y la formación integral, diseñado para que nuestros estudiantes <br>desarrollen su máximo potencial en todas las áreas de su vida. Nuestro enfoque combina un plan de estudios <br>sólido con actividades extracurriculares enriquecedoras, fomentando habilidades críticas como el liderazgo, el <br>trabajo en equipo y la creatividad. Además, contamos con un equipo docente altamente capacitado y comprometido,<br> que personaliza la experiencia educativa para atender las necesidades y talentos individuales de cada estudiante. <br>Aquí, no solo aprenderás matemáticas, ciencias o idiomas, sino que también adquirirás valores fundamentales <br>como la responsabilidad, la empatía y la resiliencia, que te prepararán para enfrentar con éxito los desafíos del futuro. <br><br>Elegir nuestro colegio significa entrar a una comunidad que se preocupa profundamente por el bienestar y desarrollo <br>de sus estudiantes. Con modernas instalaciones que incluyen laboratorios equipados, espacios deportivos de alto nivel <br>y aulas interactivas, proporcionamos un entorno donde los alumnos pueden explorar y perfeccionar sus habilidades en <br>un ambiente seguro y estimulante. Además, nuestra filosofía se centra en crear un equilibrio entre lo académico, lo <br>emocional y lo social. Promovemos actividades que refuercen el sentido de pertenencia, la participación activa y el <br>trabajo conjunto entre estudiantes, docentes y familias. Aquí no serás un número más, serás parte de una comunidad <br>que te apoya, te impulsa y celebra cada uno de tus logros, asegurándose de que cada paso en tu camino educativo esté <br>lleno de propósito, motivación y alegría.</p>
+              </div>
+              <div class="images-container">
+                <img src="img/director.jpg" alt="Foto 1" class="foto1">
+                <img src="img/clase_alu.jpg" alt="Foto 2" class="foto2">
+              </div>
+            </div>
+            <p class="full-width-paragraph">En nuestro colegio, no solo te ayudamos a alcanzar metas académicas, sino que también te guiamos para descubrir tus pasiones y talentos. A través de actividades artísticas, deportivas, científicas y tecnológicas, ofrecemos un espacio <br>donde cada estudiante puede explorar lo que realmente le inspira. Nuestros programas personalizados y el acompañamiento constante garantizan que cada paso que des sea un avance hacia tus sueños y aspiraciones. <br><br>Nuestro colegio se distingue por su excelencia académica, su enfoque en el desarrollo integral de cada estudiante y su compromiso con el bienestar emocional y la participación comunitaria. Aquí encontrarás un entorno donde el <br>aprendizaje trasciende los libros, y el crecimiento personal es una prioridad. Somos el lugar donde podrás aprender, crecer y convertir tus metas en realidades. ¡Te invitamos a ser parte de nuestra comunidad!</p>
+          </div>
+          
+          
+          <hr class="thin-line">
+          
+          
+          <div class="history-section">
+            <div class="history-photo">
+                <img src="img/historia_cole.png" alt="Foto vertical">
+            </div>
+            <div class="history-content">
+                <h1>Historia</h1><br>
+                <p>Hace más de un siglo, en un pequeño pueblo rodeado de montañas, el Padre Esteban soñó con un lugar donde la educación y los valores cristianos transformaran vidas. En 1903, con un terreno donado por una familia local y el apoyo de la comunidad, fundó el Colegio <span style="font-style: italic; font-family: pt;"><u>EMMANUEL</u></span>, cuyo nombre significa “Dios con nosotros”. La escuela inició con una modesta construcción de adobe, dos aulas y un pequeño altar que servía como capilla. Allí, el Padre Esteban enseñaba no solo materias básicas, sino también el valor de la fe, la solidaridad y la esperanza.
+
+                    Con el tiempo, y gracias a los esfuerzos de exalumnos y benefactores, el colegio creció. Durante los años 50, se construyó un nuevo edificio con aulas modernas, una biblioteca y una capilla más grande. Las Hermanas de la Luz Perpetua se unieron al colegio, enriqueciendo su enfoque educativo con disciplina, dedicación y una formación espiritual integral. <br><br><br>
+                    
+                    <span style="font-style: italic; font-family: pt;"><u>EMMANUEL</u></span> hoy: Comunidad y excelencia educativa. <br>
+                    
+                    Hoy, el Colegio <span style="font-style: italic; font-family: pt;"><u>EMMANUEL</u></span> es un referente en la región. Sus modernas instalaciones incluyen laboratorios, canchas deportivas y espacios dedicados a las artes y la tecnología. Más allá de lo material, el Emmanuel sigue fiel a su misión: formar estudiantes académicamente preparados y con sólidos valores humanos.
+                    
+                    El espíritu de comunidad que marcó sus inicios sigue vivo, guiando a nuevas generaciones hacia un futuro brillante. El lema “Dios con nosotros, guiándonos hacia el futuro” refleja el compromiso del colegio de ser un lugar donde el aprendizaje y la fe caminan de la mano, transformando vidas y construyendo esperanza.
+                    </p>
+                
+            </div>
+        </div>
+        
+        
+        
+          
+          
+
+        <br><br><br><br><br><br>
+
+    <div class="image-with-text">
+      <a href="centro.html#elegir">
+        <img src="img/espaldas.jpg" alt="Imagen con texto">
+        <div class="text-overlay">¿Por qué elegirnos?</div>
+      </a>
+    </div>
+
+
+
+
+
+
+
+
+    </div>
+    
+  </section>
+
+
+
+
+
+<!------------------------------------------------------------------------------------------------------------------->
+<footer>
+  <div class="image-divider">
+    <img style="position: absolute; top: -40px;" src="img/divisor2.png" alt="Divisor de secciones">
+  </div>
+  <br><br><br><br><br>
+  <div class="footer-container">
+    <div class="footer-left">
+      <div class="footer-logo">
+        <img src="img/image__2_-removebg-preview.png" alt="Logo">
+      </div>
+      <div class="footer-social">
+        <a href="#"><img src="img/facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="img/twitter.png" alt="Twitter"></a>
+        <a href="#"><img src="img/instagram.png" alt="Instagram"></a>
+      </div>
+    </div>
+    <div class="footer-columns">
+      <div class="footer-column">
+        <h2>ADMINISTRACIÓN</h2>
+        <ul>
+          <li><a href="titulos.html">Títutlos</a></li>
+          <li><a href="matriculas.html">Matrículas</a></li>
+          <li><a href="becas.html">Becas</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h2>ACCESOS</h2>
+        <ul>
+          <li><a href="https://itponiente.com/moodle/login/index.php">Aula Virtual</a></li>
+          <li><a href="orientacion.html">Orientación</a></li>
+          <li><a href="centro.html">Centro</a></li>
+          
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h2>CONTACTOS</h2>
+        <ul>
+          <li><img src="img/email.png" alt="Correo"> correo@example.com</li>
+          <br>
+          <li><img src="img/phone.png" alt="Teléfono"> +34 123 456 789</li>
+          <br>
+          <li><img src="img/location.png" alt="Ubicación"> Calle Ejemplo 123, Ciudad, País</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  
+  <!------------------------------------------------------------------------------------------------------------------->
+
+
+  <button class="scroll-to-top" onclick="scrollToTop()">⬆</button>
+
+
+
+
+  <script src="js/javaScript.js"></script>
+</body>
+</html>

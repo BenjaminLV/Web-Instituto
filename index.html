@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EMMANUEL</title>
+
+  <link rel="stylesheet" href="estilos/estilos.css">
+  <style>
+
+    
+
+    /*Estilos para el body y el html*/
+    html, body{
+      overflow-x: hidden; /*Eliminar el desplazamiento horizontal*/
+      margin: 0;
+      padding: 0;
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      background-image: url(img/fondo2.png);
+    }
+
+    
+    /*------------------------------------------------------------------------------------------------------*/
+    .carousel{
+      position: relative;
+      width: 100%;
+      max-height: 600px; /*Ajusta la altura según tus necesidades*/
+      overflow: hidden;
+    }
+    .carousel img{
+      width: 100%;
+      display: none;
+      filter: brightness(50%); /*Aplica el filtro de oscurecimiento*/
+    }
+    .carousel img.active{
+      display: block;
+    }
+    .carousel-text{
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      transform: translateY(-50%);
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 24px; /*Ajusta el tamaño de fuente según tus necesidades*/
+      z-index: 2; /*Asegura que esté en frente de la imagen*/
+    }
+    .carousel-side-content{
+      font-family: "nunito";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 40%; /*2/5 del ancho de la imagen*/
+      background-color: rgba(144, 238, 144, 0.3); /*Verde claro y más transparente*/
+      padding: 20px;
+      border-radius: 0 10px 10px 0;
+      color: white;
+      font-size: 18px; /*Ajusta el tamaño de fuente según tus necesidades*/
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      z-index: 1; /*Asegura que esté detrás del texto*/
+    }
+    .carousel-buttons{
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+      z-index: 2; /*Asegura que los botones estén en frente de la imagen*/
+    }
+    .carousel-buttons button{
+      background-color: rgba(255, 255, 255, 0.683);
+      border: none;
+      color: white;
+      padding: 10px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+    
+    
+    /*------------------------------------------------------------------------------------------------------*/
+    /*Estilos para la imagen con texto*/
+.image-with-text{
+  position: relative;
+  width: 100%;
+  margin: 40px 0; /*Ajustado para separación adecuada*/
+  overflow: hidden; /*Para evitar que el contenido sobresalga cuando se agranda*/
+}
+.image-with-text a{
+  display: block; /*Hacer que el enlace ocupe todo el bloque*/
+}
+.image-with-text img{
+  width: 100%;
+  height: 300px; /*Ajustado para menor altura*/
+  object-fit: cover;
+  filter: brightness(50%);
+  transition: transform 0.3s ease; /*Transición suave para el efecto de agrandamiento*/
+}
+.image-with-text img:hover{
+  transform: scale(1.05); /*Agrandar la imagen al 105%*/
+}
+
+
+/*------------------------------------------------------------------------------------------------------*/
+
+
+
+/*Estilos para la imagen centrada*/
+.centered-image{
+  background-color: rgba(255, 255, 255, 0.683);
+  margin: 0%;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0; /*Margen superior e inferior para separación*/
+}
+.centered-image img{
+  width: 1053px;
+  height: 231px;
+}
+
+/*Estilos para las imágenes cuadradas*/
+.square-images{
+  display: flex;
+  justify-content: center;
+  gap: 40px; /*Espacio mayor entre las dos imágenes cuadradas*/
+  margin: 20px 0; /*Margen superior e inferior para separación*/
+}
+.square-images a{
+  display: block; /*Asegurar que el enlace ocupa todo el bloque*/
+  transition: transform 0.3s ease; /*Transición suave para el efecto de agrandamiento*/
+}
+.square-images img{
+  width: 462px; /*Doble del tamaño original*/
+  height: 462px; /*Doble del tamaño original*/
+  object-fit: cover;
+}
+.square-images a:hover{
+  transform: scale(1.05); /*Agrandar la imagen al 105%*/
+}
+
+/*Contenedor de imagen con texto superpuesto*/
+.image-container{
+  
+  position: relative;
+  width: 462px;
+  height: 462px;
+}
+
+/*Estilos para la imagen con texto grande*/
+.image-with-text-large{
+  position: relative;
+  width: 100%;
+  margin: 40px 0; /*Ajustado para separación adecuada*/
+  overflow: hidden; /*Para evitar que el contenido sobresalga cuando se agranda*/
+}
+.image-with-text-large a{
+  display: block; /*Hacer que el enlace ocupe todo el bloque*/
+}
+.image-with-text-large img{
+  width: 100%;
+  height: 600px; /*Doble de la altura original*/
+  object-fit: cover;
+  filter: brightness(50%);
+  transition: transform 0.3s ease; /*Transición suave para el efecto de agrandamiento*/
+}
+.image-with-text-large img:hover{
+  transform: scale(1.05); /*Agrandar la imagen al 105%*/
+}
+
+
+
+
+/*------------------------------------------------------------------------------------------------------*/
+
+
+.info-container{
+  flex: 1;
+  text-align: center;
+}
+form{
+  display: flex;
+  flex-direction: column;
+}
+label{
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+input, textarea{
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+button{
+  background-color: #3cb371; /*Tono verdoso frío*/
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button:hover{
+  background-color: #32a060; /*Color más oscuro al pasar el ratón*/
+}
+
+
+  </style>
+</head>
+<body>
+<!------------------------------------------------------------------------------------------------------------------->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="index.html"><img src="img/image (1).png" alt="Logo"></a>
+      </div>
+      <nav>
+        <div class="dropdown">
+          <a href="centro.html">Nuestro Centro</a>
+          <div class="dropdown-content">
+            <a href="centro.html">Centro</a>
+            <a href="aulas.html">Aulas</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="#">Ciclos Educativos</a>
+          <div class="dropdown-content">
+            <a href="eso.html">ESO</a>
+            <a href="bachillerato.html">Bachillerato</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="#">Administración</a>
+          <div class="dropdown-content">
+            <a href="organigrama.html">Organigrama</a>
+            <a href="plan_estudio.html">Plan de Estudios</a>
+            <a href="becas.html">Becas</a>
+            <a href="matriculas.html">Matrículas</a>
+            <a href="titulos.html">Títulos</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="orientaciones.html">Orientación</a>
+          <div class="dropdown-content">
+            <a href="departamentos.html">Departamentos</a>
+            <a href="orientaciones.html">Orientaciones</a>
+          </div>
+        </div>
+        <a href="index.html#contacto">Contactos</a>
+        <a href="https://itponiente.com/moodle/login/index.php">Aula Virtual</a>
+      </nav>
+    </div>
+  </header>
+
+  <!------------------------------------------------------------------------------------------------------------------->
+
+
+  <div class="carousel">
+    <div class="carousel-text"><h1 style="font-family: pt;">EMMANUEL</h1><br><span style="font-family: nunito;">Formando corazones y mentes con fe y conocimiento</span></div>
+    <img src="img/niños_uniforme.png" alt="Imagen 1" class="active">
+    <img src="img/estudiantes.jpg" alt="Imagen 2">
+    <img src="img/grupo_alum.jpg" alt="Imagen 3">
+    <div class="carousel-side-content" style="font-size:x-large;"><span style="font-size: xx-large;">BIENVENIDO</span></div>
+    <div class="carousel-buttons">
+      <button onclick="prevSlide()">&#10094;</button>
+      <button onclick="nextSlide()">&#10095;</button>
+    </div>
+  </div>
+
+  <!------------------------------------------------------------------------------------------------------------------->
+    <br><br><br><br><br><br>
+
+  <div style="text-align: center; background-color: rgba(255, 255, 255, 0.683);">
+    <h1>En <span style="font-family: pt;">EMMANUEL</span> tenemos nuestros propios pilares de la educación</h1>
+  </div>
+
+  <div class="content-wrapper">
+
+    <div class="box">
+      <img src="img/medalla.png" alt="">
+      <h3>Cladidad Académica</h3><p>En nuestro instituto, la Calidad Académica es el eje central de nuestra misión educativa. Nos esforzamos por ofrecer una enseñanza de excelencia basada en metodologías actualizadas, profesores altamente capacitados y programas académicos que inspiran el pensamiento crítico, la creatividad y la curiosidad. <br><br> Nuestro compromiso es preparar a los estudiantes no solo para los retos académicos del presente, sino también para destacar en el mundo profesional y contribuir significativamente a la sociedad.</p>
+    </div>
+    <div class="box">
+      <img src="img/puzzle.png" alt="">
+      <h3>Infraestructura y Recursos</h3><p>Creemos que un entorno adecuado potencia el aprendizaje, por lo que nuestra Infraestructura y Recursos están diseñados para proporcionar comodidad, funcionalidad y tecnología de punta. <br><br> Contamos con aulas modernas, laboratorios especializados, bibliotecas bien equipadas y espacios deportivos y recreativos que fomentan el desarrollo integral. Nuestro objetivo es que cada estudiante tenga acceso a las herramientas necesarias para alcanzar su máximo potencial.</p>
+    </div>
+    <div class="box">
+      <img src="img/gorro.png" alt="">
+      <h3>Formación Integral del Estudiante</h3><p>Nuestro enfoque en la Formación Integral del Estudiante va más allá de los aspectos académicos. Nos esforzamos por formar ciudadanos responsables, éticos y comprometidos, promoviendo valores como el respeto, la empatía y la responsabilidad social. <br><br> A través de actividades extracurriculares, programas de orientación y proyectos solidarios, aseguramos que nuestros alumnos se desarrollen plenamente en los aspectos intelectual, emocional y social.</p>
+    </div>
+    <div class="box">
+      <img src="img/manos.png" alt="">
+      <h3>Comunidad y Participación</h3><p>Somos una institución que fomenta una Comunidad y Participación activa entre estudiantes, familias y docentes. Valoramos el diálogo abierto y la colaboración, porque creemos que juntos podemos construir un entorno más enriquecedor y significativo. <br><br> A través de eventos, actividades culturales y espacios de integración, fortalecemos los lazos que nos unen como una familia educativa comprometida con el bienestar común.</p>
+    </div>
+    <div class="rectangle">
+      <h2>Bienestar Emocional y Motivación (La base de nuestros pilares)</h2><p>En la base de todos nuestros esfuerzos se encuentra el Bienestar Emocional y la Motivación de cada estudiante. Reconocemos la importancia de un ambiente seguro, positivo y estimulante donde los alumnos se sientan valorados y apoyados. Nuestro equipo está dedicado a brindar herramientas para manejar las emociones, cultivar la resiliencia y mantener una actitud optimista hacia los desafíos de la vida, promoviendo así un aprendizaje más efectivo y una vida más plena.</p>
+    </div>
+  </div>
+
+  <!------------------------------------------------------------------------------------------------------------------->
+  <br><br><br><br><br><br>
+
+  <div class="image-with-text">
+    <a href="centro.html">
+      <img src="img/espaldas.jpg" alt="Imagen con texto">
+      <div class="text-overlay">¿Por qué elegirnos?</div>
+    </a>
+  </div>
+  
+  <!-------------------------------------------------------------------------------------------------------------------> 
+
+
+  <br><br><br>
+  <div style="text-align: center;">
+    <h1 style="background-color: rgba(255, 255, 255, 0.683); font-family: pt;">"Resutados academicos de 2024"</h1>
+  </div>
+  <!-- Nueva imagen centrada debajo del texto -->
+  <div class="centered-image">
+    <img src="img/image.png" alt="Imagen centrada">
+  </div>
+  
+  <div class="square-images">
+    <a href="eso.html">
+      <div class="image-container">
+        <img src="img/ESO.png" alt="Imagen cuadrada 1" style="border-radius: 10%;">
+        <div class="text-overlay" style="color: black;">Educación Secundaria Obligatoria</div>
+      </div>
+    </a>
+    <a href="bachillerato.html">
+      <div class="image-container">
+        <img src="img/bach.png" alt="Imagen cuadrada 2" style="border-radius: 10%;">
+        <div class="text-overlay" style="color: black;">Bachillerato</div>
+      </div>
+    </a>
+  </div>
+  <br><br><br>
+  <!-- Nueva imagen centrada debajo de las imágenes cuadradas -->
+  <div class="image-with-text-large">
+    <a href="aulas.html">
+      <img src="img/colegio.png" alt="Conócenos por dentro">
+      <div class="text-overlay">!Conócenos por dentro¡</div>
+    </a>
+  </div>
+  
+
+ <!------------------------------------------------------------------------------------------------------------------->
+
+  <section class="form-section" id="contacto">
+    <div class="image-divider">
+      <img src="img/divisor.png" alt="Divisor de secciones">
+    </div>
+    <div class="info-container">
+      <h1 style="font-family: roboto;">Contacta con nosotros</h1>
+    </div>
+    <div class="form-container">
+      <form action="#" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+        
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido">
+        
+        <label for="email">Correo Electrónico *:</label>
+        <input type="email" id="email" name="email">
+        
+        <label for="mensaje">Escribe un mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+        
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+    
+  </section>
+  
+  <!------------------------------------------------------------------------------------------------------------------->
+
+  <footer>
+    <div class="image-divider">
+      <img style="position: absolute; top: -40px;" src="img/divisor2.png" alt="Divisor de secciones">
+    </div>
+    <br><br><br><br><br>
+    <div class="footer-container">
+      <div class="footer-left">
+        <div class="footer-logo">
+          <img src="img/image__2_-removebg-preview.png" alt="Logo">
+        </div>
+        <div class="footer-social">
+          <a href="#"><img src="img/facebook.png" alt="Facebook"></a>
+          <a href="#"><img src="img/twitter.png" alt="Twitter"></a>
+          <a href="#"><img src="img/instagram.png" alt="Instagram"></a>
+        </div>
+      </div>
+      <div class="footer-columns">
+        <div class="footer-column">
+          <h2>ADMINISTRACIÓN</h2>
+          <ul>
+            <li><a href="titulos.html">Títutlos</a></li>
+            <li><a href="matriculas.html">Matrículas</a></li>
+            <li><a href="becas.html">Becas</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h2>ACCESOS</h2>
+          <ul>
+            <li><a href="https://itponiente.com/moodle/login/index.php">Aula Virtual</a></li>
+            <li><a href="orientacion.html">Orientación</a></li>
+            <li><a href="centro.html">Centro</a></li>
+            
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h2>CONTACTOS</h2>
+          <ul>
+            <li><img src="img/email.png" alt="Correo"> correo@example.com</li>
+            <br>
+            <li><img src="img/phone.png" alt="Teléfono"> +34 123 456 789</li>
+            <br>
+            <li><img src="img/location.png" alt="Ubicación"> Calle Ejemplo 123, Ciudad, País</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+
+  
+  <!------------------------------------------------------------------------------------------------------------------->
+
+
+  <button class="scroll-to-top" onclick="scrollToTop()">⬆</button>
+  <script>
+
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.carousel img');
+    const sideContents = [
+      'En nuestro colegio, no solo aprendes, ¡te formas para la vida! Nuestra misión no se limita a ofrecer un plan de estudios académico; nos enfocamos en preparar a nuestros estudiantes para enfrentar los desafíos del mundo real. Promovemos el pensamiento crítico, la resolución de problemas, y la creatividad, mientras inculcamos valores fundamentales como la responsabilidad, la integridad y el respeto. Queremos que cada estudiante salga de nuestras aulas con las herramientas necesarias para triunfar en cualquier ámbito de su vida.',
+      'Aquí no eres un número, eres parte de una comunidad. En nuestro colegio, valoramos a cada estudiante como un individuo único. Fomentamos un ambiente cálido y cercano donde las familias, los docentes y los estudiantes trabajan juntos hacia un objetivo común: el éxito personal y académico. Realizamos eventos culturales, deportivos y sociales que fortalecen el sentido de pertenencia y el trabajo en equipo. Aquí, aprenderás que la unión y la colaboración son esenciales para alcanzar metas colectivas e individuales',
+      'Todo lo que necesitas para alcanzar tu máximo potencial, está aquí. Contamos con modernas instalaciones que incluyen aulas interactivas, laboratorios equipados con tecnología de punta, espacios deportivos de primer nivel y bibliotecas con vastos recursos educativos. Además, nuestros programas de apoyo, como tutorías personalizadas y actividades extracurriculares, están diseñados para descubrir y potenciar tus habilidades y talentos. Aquí encontrarás un entorno donde cada detalle está pensado para ayudarte a destacar en lo que más te apasiona.'
+    ];
+    const totalSlides = slides.length;
+
+    function showSlide(index){
+    slides.forEach((slide, i) =>{
+      slide.classList.remove('active');
+      if (i === index){
+        slide.classList.add('active');
+      }
+    });
+    document.querySelector('.carousel-side-content').textContent = sideContents[index];
+  }
+
+  function nextSlide(){
+    currentSlide = (currentSlide + 1) % totalSlides;
+    showSlide(currentSlide);
+  }
+
+  function prevSlide(){
+    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+    showSlide(currentSlide);
+  }
+
+  function scrollToTop(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+  </script>
+</body>
+</html>

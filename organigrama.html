@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organigrama</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <style>
+    .image-container{
+  position: relative; /*Para posicionar el texto sobre la imagen*/
+  width: 100%;
+  height: 300px; /*Altura fija para la imagen*/
+  overflow: hidden;
+}
+
+.image-container img{
+  width: 100%;
+  height: 100%; /*Ajusta la altura al 100% del contenedor*/
+  object-fit: cover; /*Mantiene la proporción de la imagen y llena el contenedor*/
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /*Filtro negro oscuro con opacidad*/
+}
+
+.overlay-text{
+  position: absolute;
+  top: 50%;
+  left: 10%; /*Ajusta este valor para centrar el texto a la izquierda*/
+  transform: translateY(-50%); /*Centra verticalmente el texto*/
+  color: white;
+  text-align: left; /*Alinea el texto a la izquierda*/
+}
+
+.overlay-text h1{
+    font-size: pt;
+  font-size: 36px;
+  margin: 0;
+}
+
+
+
+
+strong{
+    font-family: nunito;
+    font-size: large;
+}
+
+
+.organigrama{
+    margin-right: 200px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    margin-left: 200px; /*Ajusta este valor para separar más del lado izquierdo*/
+}
+
+.organigrama h2{
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+
+.organigrama p{
+    margin: 10px 0;
+}
+
+.organigrama strong{
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+.tabbed-content{
+    margin-left: 40px; /*Ajusta este valor para tabular más el contenido*/
+}
+
+
+
+
+
+
+
+.equipo-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.equipo{
+    text-align: center;
+}
+
+.equipo h3{
+    margin-bottom: 10px;
+}
+
+.foto{
+    
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <!------------------------------------------------------------------------------------------------------------------->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="index.html"><img src="img/image (1).png" alt="Logo"></a>
+        </div>
+        <nav>
+          <div class="dropdown">
+            <a href="centro.html">Nuestro Centro</a>
+            <div class="dropdown-content">
+              <a href="centro.html">Centro</a>
+              <a href="aulas.html">Aulas</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="#">Ciclos Educativos</a>
+            <div class="dropdown-content">
+              <a href="eso.html">ESO</a>
+              <a href="bachillerato.html">Bachillerato</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="#">Administración</a>
+            <div class="dropdown-content">
+              <a href="organigrama.html">Organigrama</a>
+              <a href="plan_estudio.html">Plan de Estudios</a>
+              <a href="becas.html">Becas</a>
+              <a href="matriculas.html">Matrículas</a>
+              <a href="titulos.html">Títulos</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="orientaciones.html">Orientación</a>
+            <div class="dropdown-content">
+              <a href="departamentos.html">Departamentos</a>
+              <a href="orientaciones.html">Orientaciones</a>
+            </div>
+          </div>
+          <a href="index.html#contacto">Contactos</a>
+          <a href="https://itponiente.com/moodle/login/index.php">Aula Virtual</a>
+        </nav>
+      </div>
+    </header>
+
+  
+  
+  <div class="image-container">
+    <img src="img/administra.png" alt="Imagen horizontal">
+    <div class="overlay"></div>
+    <div class="overlay-text">
+      <h1><u>Organigrama</u></h1>
+    </div>
+  </div>
+  
+  <br><br>
+
+  <div class="organigrama">
+    <h2>Organigrama</h2>
+    <br><br><br>
+    <p><strong>+Director Titular:</strong><br>
+        <div class="tabbed-content">-Pepito Pérez</div><br><br>
+    </p>
+    <p><strong>+Director Académico:</strong><br>
+        <div class="tabbed-content">-Pepito Pérez</div><br><br>
+    </p>
+    <p><strong>+Coordinadores Pedagógicos:</strong><br>
+        <div class="tabbed-content">-Educación Infantil: Dña. Tamara Calvo Fernández</div><br>
+        <div class="tabbed-content">-Educación Primaria: D. Daniel Lupián Piquero</div><br>
+        <div class="tabbed-content">-Secundaria: Dña. Mª Jose Ochoa García</div><br><br>
+    </p>
+    <p><strong>+Equipo Directivo:</strong><br>
+        <div class="tabbed-content">-Director titular: D. Ildefonso Fernández-Figares Vicioso</div><br>
+        <div class="tabbed-content">-Director académico: D. Juan Antonio Leyva Martínez</div><br>
+        <div class="tabbed-content">-Jefe de Estudios: D. Juan Antonio Delgado López</div><br>
+        <div class="tabbed-content">-Secretaria: Dña. María Narbona Galdo</div><br>
+        <div class="tabbed-content">-Administrador: Dña. Mercedes Navajas</div><br><br>
+    </p>
+    <p>
+        <div class="tabbed-content">-Coord. Evangelización: D. Juan Miguel Morales Moya</div><br>
+        <div class="tabbed-content">-Coord. A. Extraescolares: D. Diego Martínez Gómez</div><br>
+        <div class="tabbed-content">-Coord. de Calidad: D. José Luis Espádoar López</div><br>
+        <div class="tabbed-content">-Coord. de Bilingüismo: Dña. Mª Gracia Navarrete</div>
+    </p>
+</div>
+
+
+  
+  
+  
+  <section class="form-section">
+    <div class="image-divider">
+      <img src="img/divisor.png" alt="Divisor de secciones">
+    </div>
+    <div class="info-container">
+        <br><br><br>
+
+
+
+        <div class="equipo-container">
+            <div class="equipo">
+                <h3>+Equipo Bachillerato:</h3>
+                <div class="foto"><img src="img/profe_bach.png" alt=""></div>
+            </div>
+            <div class="equipo">
+                <h3>+Equipo E.S.O:</h3>
+                <div class="foto"><img src="img/profe_eso.png" alt=""></div>
+            </div>
+        </div>
+        
+    </div>
+    
+  </section>
+
+
+
+
+<!------------------------------------------------------------------------------------------------------------------->
+<footer>
+  <div class="image-divider">
+    <img style="position: absolute; top: -40px;" src="img/divisor2.png" alt="Divisor de secciones">
+  </div>
+  <br><br><br><br><br>
+  <div class="footer-container">
+    <div class="footer-left">
+      <div class="footer-logo">
+        <img src="img/image__2_-removebg-preview.png" alt="Logo">
+      </div>
+      <div class="footer-social">
+        <a href="#"><img src="img/facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="img/twitter.png" alt="Twitter"></a>
+        <a href="#"><img src="img/instagram.png" alt="Instagram"></a>
+      </div>
+    </div>
+    <div class="footer-columns">
+      <div class="footer-column">
+        <h2>ADMINISTRACIÓN</h2>
+        <ul>
+          <li><a href="titulos.html">Títutlos</a></li>
+          <li><a href="matriculas.html">Matrículas</a></li>
+          <li><a href="becas.html">Becas</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h2>ACCESOS</h2>
+        <ul>
+          <li><a href="https://itponiente.com/moodle/login/index.php">Aula Virtual</a></li>
+          <li><a href="orientacion.html">Orientación</a></li>
+          <li><a href="centro.html">Centro</a></li>
+          
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h2>CONTACTOS</h2>
+        <ul>
+          <li><img src="img/email.png" alt="Correo"> correo@example.com</li>
+          <br>
+          <li><img src="img/phone.png" alt="Teléfono"> +34 123 456 789</li>
+          <br>
+          <li><img src="img/location.png" alt="Ubicación"> Calle Ejemplo 123, Ciudad, País</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  
+  <!------------------------------------------------------------------------------------------------------------------->
+
+
+  <button class="scroll-to-top" onclick="scrollToTop()">⬆</button>
+
+
+
+
+  <script src="js/javaScript.js"></script>
+</body>
+</html>

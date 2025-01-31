@@ -1,0 +1,302 @@
+@font-face{
+    
+    
+    
+    font-family: 'nunito';
+    src: url(Nunito-VariableFont_wght.ttf);
+}
+
+@font-face{
+    
+    
+    
+    font-family: 'roboto';
+    src: url(Roboto-Regular.ttf);
+}
+
+@font-face{
+    
+    
+    
+    font-family: 'pt';
+    src: url(PTSerif-Regular.ttf);
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+h3{
+    font-family:"nunito";
+  }
+
+  html, body{
+    overflow-x: hidden; /*Eliminar el desplazamiento horizontal*/
+    margin: 0;
+    padding: 0;
+    
+    
+  }
+/*------------------------------------------------------------------------------------------------------*/
+header{
+      
+    background-color: #144734;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container{
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo img{
+    height: 100px;
+  }
+  nav{
+    display: flex;
+    gap: 40px;
+  }
+  nav a{
+    font-family: nunito;
+    color: #1daa76;
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
+  }
+  nav a:hover{
+    color: white;
+  }
+  .dropdown{
+    
+    z-index: 2;
+    position: relative;
+  }
+  .dropdown-content{
+    
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #0f4b39;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  .dropdown-content a{
+    color: #1daa76;
+    
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none;
+  }
+  .dropdown-content a:hover{
+    background-color: #1e7056;
+  }
+  .dropdown:hover .dropdown-content{
+    display: block;
+
+  }/*------------------------------------------------------------------------------------------------------*/
+  .scroll-to-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(179, 198, 33);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /*------------------------------------------------------------------------------------------------------*/
+    /*Estilos para los recuadros y el rectángulo*/
+    .content-wrapper{
+        width: 90%;
+        max-width: 1200px;
+        margin: 20px auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      .box{
+        font-family: roboto;
+        flex: 1 1 calc(25% - 20px);
+        background-color: #e0e0e0;
+        padding: 20px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        display: flex; 
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+      }
+  
+      .box img{
+        width: 50px;
+        height: 50px;
+        
+      }
+      .rectangle{
+        font-family: Arial, Helvetica, sans-serif;
+        flex: 1 1 100%;
+        background-color: #c0c0c0;
+        padding: 20px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        text-align: center;
+      }
+/*------------------------------------------------------------------------------------------------------*/
+
+.text-overlay{
+    font-family: "nunito";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+/*------------------------------------------------------------------------------------------------------*/
+/*Otros estilos relevantes*/
+.form-section{
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px 40px 40px;
+    background-color: #0fdf93; /*Color de fondo verde*/
+  }
+  
+  .form-container{
+    flex: 1;
+    padding-right: 20px;
+  }
+
+/*------------------------------------------------------------------------------------------------------*/
+/*Estilos para la imagen divisora*/
+.image-divider{
+    position: relative;
+    width: calc(100vw + 50px); /*Asegura que ocupe todo el ancho de la ventana gráfica y compense el desplazamiento*/
+    margin: 0;
+    padding: 0;
+    left: -50px; /*Mueve la imagen hacia la izquierda*/
+  }
+  
+  .image-divider img{
+    
+    width: 100%;
+    height: auto; /*Permitir que la altura se ajuste automáticamente*/
+    
+  }
+/*------------------------------------------------------------------------------------------------------*/
+
+/*Estilos para el footer*/
+footer{
+    background-color: #144734;
+    color: white;
+    padding: 40px 0;
+    position: relative; /*Asegura que el footer tenga un contexto de posición*/
+  }
+  
+  
+  .footer-container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .footer-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*Centrar el contenido de la izquierda*/
+  }
+  .footer-logo img{
+    height: 100px;
+  }
+  .footer-social{
+    display: flex;
+    justify-content: center; /*Centrar las redes sociales*/
+    gap: 20px;
+    margin-top: 20px; /*Espacio entre el logo y las redes sociales*/
+  }
+  .footer-social a img{
+    width: 40px;
+    height: 40px;
+  }
+  .footer-columns{
+    display: flex;
+    justify-content: flex-end; /*Alinear las columnas hacia la derecha*/
+    gap: 40px; /*Espacio entre las columnas*/
+  }
+  .footer-column{
+    flex: 1;
+  }
+  .footer-column h2{
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .footer-column ul{
+    list-style: none;
+    padding: 0;
+  }
+  .footer-column li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .footer-column img{
+    margin-right: 10px; /*Espacio entre el ícono y el texto*/
+  }
+  .footer-column a{
+    color:#0fdf93;
+    text-decoration: none;
+  }
+  .footer-column a:hover{
+    color: #c9e3db;
+  }
+  .footer-column img{
+    width: 20px;
+    height: 20px;
+  }  
+
+
+
+
+
+
+
+
+
+  .image-with-text {
+    position: relative;
+    width: 100%;
+    margin: 40px 0; /* Ajustado para separación adecuada */
+    overflow: hidden; /* Para evitar que el contenido sobresalga cuando se agranda */
+  }
+  
+  .image-with-text a {
+    display: block; /* Hacer que el enlace ocupe todo el bloque */
+  }
+  
+  .image-with-text img {
+    width: 100%;
+    height: 300px; /* Ajustado para menor altura */
+    object-fit: cover;
+    filter: brightness(50%);
+    transition: transform 0.3s ease; /* Transición suave para el efecto de agrandamiento */
+  }
+  
+  .image-with-text img:hover {
+    transform: scale(1.05); /* Agrandar la imagen al 105% */
+  }

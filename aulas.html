@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aulas</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <style>
+    .image-container{
+  position: relative; 
+  width: 100%;
+  height: 300px; 
+  overflow: hidden;
+}
+
+.image-container img{
+  width: 100%;
+  height: 100%; 
+  object-fit: cover; 
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.overlay-text{
+  position: absolute;
+  top: 50%;
+  left: 10%; 
+  transform: translateY(-50%); 
+  color: white;
+  text-align: left; 
+}
+
+.overlay-text h1{
+    font-size: pt;
+  font-size: 36px;
+  margin: 0;
+}
+
+.section-container{
+    text-align: center;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.section-container h1{
+    margin-bottom: 20px;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.content h2{
+    font-family: nunito;
+    margin-right: 20px;
+}
+
+.gallery-container{
+    overflow: hidden;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.gallery img{
+    width: 300px; 
+    height: auto;
+    margin-right: 20px;
+    scroll-snap-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.location-section{
+    text-align: center;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.location-section h1{
+    font-family: pt;
+    margin-bottom: 20px;
+}
+
+.map-container{
+    display: flex;
+    justify-content: center;
+}
+
+.map-container iframe{
+    width: 100%;
+    max-width: 800px; 
+    height: 450px;
+    border: 0;
+}
+
+
+
+
+
+
+.thin-line{
+  border: 0;
+  border-top: 1px solid #000; 
+  margin: 100px auto; 
+  width: 50%; 
+}
+    </style>
+</head>
+<body>
+    <!------------------------------------------------------------------------------------------------------------------->
+    <header>
+        <div class="container">
+          <div class="logo">
+            <a href="index.html"><img src="img/image (1).png" alt="Logo"></a>
+          </div>
+          <nav>
+            <div class="dropdown">
+              <a href="centro.html">Nuestro Centro</a>
+              <div class="dropdown-content">
+                <a href="centro.html">Centro</a>
+                <a href="aulas.html">Aulas</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a href="#">Ciclos Educativos</a>
+              <div class="dropdown-content">
+                <a href="eso.html">ESO</a>
+                <a href="bachillerato.html">Bachillerato</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a href="#">Administración</a>
+              <div class="dropdown-content">
+                <a href="organigrama.html">Organigrama</a>
+                <a href="plan_estudio.html">Plan de Estudios</a>
+                <a href="becas.html">Becas</a>
+                <a href="matriculas.html">Matrículas</a>
+                <a href="titulos.html">Títulos</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a href="orientaciones.html">Orientación</a>
+              <div class="dropdown-content">
+                <a href="departamentos.html">Departamentos</a>
+                <a href="orientaciones.html">Orientaciones</a>
+              </div>
+            </div>
+            <a href="index.html#contacto">Contactos</a>
+            <a href="https://itponiente.com/moodle/login/index.php">Aula Virtual</a>
+          </nav>
+        </div>
+      </header>
+
+  
+  
+  <div class="image-container">
+    <img src="img/colegio.png" alt="Imagen horizontal">
+    <div class="overlay"></div>
+    <div class="overlay-text">
+      <h1><u>Nuestro Centro</u></h1>
+    </div>
+  </div>
+  
+  
+  
+
+  <div class="section-container">
+    <h1>*Aulas*</h1>
+    <div class="content">
+        <h2><u>Salon de Actos</u></h2>
+        <p>Un espacio amplio y moderno diseñado para eventos escolares, representaciones teatrales, conferencias y ceremonias. Es el lugar donde la comunidad educativa se reúne para celebrar y compartir logros.</p>
+    </div>
+    <div class="gallery-container">
+        <div class="gallery">
+            <img src="img/Aulas/Salon1.png" alt="Imagen 1">
+            <img src="img/Aulas/Salon2.png" alt="Imagen 2">
+            <img src="img/Aulas/Salon3.png" alt="Imagen 3">
+            
+        </div>
+    </div>
+    <br><br><br><br><br>
+    <!---------------------------------------------->
+    <div class="content">
+        <h2><u>Aula de Dibujo</u></h2>
+        <p>Un entorno inspirador equipado con materiales y herramientas artísticas. Aquí los estudiantes desarrollan su creatividad y habilidades en diferentes técnicas de expresión plástica.</p>
+    </div>
+    <div class="gallery-container">
+        <div class="gallery">
+            <img src="img/Aulas/dibujo1.png" alt="Imagen 1">
+            <img src="img/Aulas/dibujo2.png" alt="Imagen 2">
+            <img src="img/Aulas/dibujo3.png" alt="Imagen 3">
+            <img src="img/Aulas/dibujo4.png" alt="Imagen 4">
+        </div>
+    </div>
+    <br><br><br><br><br>
+    <!---------------------------------------------->
+    <div class="content">
+        <h2><u>Aula Música</u></h2>
+        <p>Dotada de instrumentos y equipos de sonido, esta aula fomenta la apreciación y práctica musical, permitiendo a los alumnos explorar su talento y disfrutar del lenguaje universal de la música.</p>
+    </div>
+    <div class="gallery-container">
+        <div class="gallery">
+            <img src="img/Aulas/musica1.png" alt="Imagen 1">
+            <img src="img/Aulas/musica2.png" alt="Imagen 2">
+            
+        </div>
+    </div>
+    <br><br><br><br><br>
+    <!---------------------------------------------->
+    <div class="content">
+        <h2><u>Aula Informática</u></h2>
+        <p>Un espacio con tecnología de última generación donde los estudiantes aprenden habilidades digitales esenciales, programación y herramientas tecnológicas que les preparan para el futuro.</p>
+    </div>
+    <div class="gallery-container">
+        <div class="gallery">
+            <img src="img/Aulas/tecno1.png" alt="Imagen 1">
+            <img src="img/Aulas/tecno2.png" alt="Imagen 2">
+            <img src="img/Aulas/tecno3.png" alt="Imagen 3">
+            <img src="img/Aulas/tecno4.png" alt="Imagen 4">
+        </div>
+    </div>
+    <br><br><br><br><br>
+    <!---------------------------------------------->
+    <div class="content">
+        <h2><u>Laboratorio</u></h2>
+        <p>Un entorno seguro y equipado para la experimentación científica. Aquí los estudiantes profundizan en las ciencias a través de prácticas que complementan su aprendizaje teórico.</p>
+    </div>
+    <div class="gallery-container">
+        <div class="gallery">
+            <img src="img/Aulas/labo1.png" alt="Imagen 1">
+            <img src="img/Aulas/labo2.png" alt="Imagen 2">
+            <img src="img/Aulas/labo3.png" alt="Imagen 3">
+            <img src="img/Aulas/labo4.png" alt="Imagen 4">
+        </div>
+    </div>
+    <br><br><br><br><br>
+    <!---------------------------------------------->
+    
+    
+    
+
+</div>
+
+
+  
+  
+  <section class="form-section">
+    <div class="image-divider">
+      <img src="img/divisor.png" alt="Divisor de secciones">
+    </div>
+    <div class="info-container">
+        <div class="section-container">
+            <h1>*Instalaciones*</h1>
+            <div class="content">
+                <h2><u>Pista polideportiva</u></h2>
+                <p>Un lugar al aire libre para la práctica de deportes como fútbol, baloncesto y atletismo. Fomenta el trabajo en equipo, la disciplina y la importancia de un estilo de vida activo.</p>
+            </div>
+            <div class="gallery-container">
+                <div class="gallery">
+                    <img src="img/Aulas/deportivo1.png" alt="Imagen 1">
+                    <img src="img/Aulas/deportivo2.png" alt="Imagen 2">
+                    <img src="img/Aulas/deportivo3.png" alt="Imagen 3">
+                    <img src="img/Aulas/deportivo4.png" alt="Imagen 4">
+                </div>
+            </div>
+            <br><br><br><br><br>
+            <!---------------------------------------------->
+            <div class="content">
+                <h2><u>Piscina</u></h2>
+                <p>Un espacio para actividades acuáticas y aprendizaje de natación, que combina el ejercicio físico con la diversión y el desarrollo de habilidades esenciales.</p>
+            </div>
+            <div class="gallery-container">
+                <div class="gallery">
+                    <img src="img/Aulas/piscina1.png" alt="Imagen 1">
+                    <img src="img/Aulas/piscina2.png" alt="Imagen 2">
+                    <img src="img/Aulas/piscina3.png" alt="Imagen 3">
+                    <img src="img/Aulas/piscina4.png" alt="Imagen 4">
+                    <img src="img/Aulas/piscina5.png" alt="Imagen 5">
+                </div>
+            </div>
+            <br><br><br><br><br>
+            <!---------------------------------------------->
+            
+            <div class="content">
+                <h2><u>Huerto</u></h2>
+                <p>Un rincón verde donde los estudiantes cultivan frutas, verduras y plantas, aprendiendo sobre sostenibilidad, medio ambiente y el valor del trabajo en la tierra.</p>
+            </div>
+            <div class="gallery-container">
+                <div class="gallery">
+                    <img src="img/Aulas/huerto1.png" alt="Imagen 1">
+                    <img src="img/Aulas/huerto2.png" alt="Imagen 2">
+                    <img src="img/Aulas/huerto3.png" alt="Imagen 3">
+                    <img src="img/Aulas/huerto4.png" alt="Imagen 4">
+                    <img src="img/Aulas/huerto5.png" alt="Imagen 5">
+                    <img src="img/Aulas/huerto6.png" alt="Imagen 6">
+                </div>
+            </div>
+            <br><br><br><br><br>
+            <!---------------------------------------------->
+            
+            
+            
+            
+        
+        </div>
+        
+
+        <hr class="thin-line">
+
+        <div class="location-section">
+            <h1>Nuestra Ubicación</h1>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.9574293727084!2d-122.08424998425917!3d37.42199977982144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fba1234abcd0%3A0xe8eeb06712ee7890!2sEscuela+Primaria!5e0!3m2!1ses!2sus!4v1637429676479!5m2!1ses!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        
+        
+
+
+
+
+    </div>
+    
+  </section>
+
+
+
+
+<!------------------------------------------------------------------------------------------------------------------->
+
+<footer>
+  <div class="image-divider">
+    <img style="position: absolute; top: -40px;" src="img/divisor2.png" alt="Divisor de secciones">
+  </div>
+  <br><br><br><br><br>
+  <div class="footer-container">
+    <div class="footer-left">
+      <div class="footer-logo">
+        <img src="img/image__2_-removebg-preview.png" alt="Logo">
+      </div>
+      <div class="footer-social">
+        <a href="#"><img src="img/facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="img/twitter.png" alt="Twitter"></a>
+        <a href="#"><img src="img/instagram.png" alt="Instagram"></a>
+      </div>
+    </div>
+    <div class="footer-columns">
+      <div class="footer-column">
+        <h2>ADMINISTRACIÓN</h2>
+        <ul>
+          <li><a href="titulos.html">Títutlos</a></li>
+          <li><a href="matriculas.html">Matrículas</a></li>
+          <li><a href="becas.html">Becas</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h2>ACCESOS</h2>
+        <ul>
+          <li><a href="https://itponiente.com/moodle/login/index.php">Aula Virtual</a></li>
+          <li><a href="orientacion.html">Orientación</a></li>
+          <li><a href="centro.html">Centro</a></li>
+          
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h2>CONTACTOS</h2>
+        <ul>
+          <li><img src="img/email.png" alt="Correo"> correo@example.com</li>
+          <br>
+          <li><img src="img/phone.png" alt="Teléfono"> +34 123 456 789</li>
+          <br>
+          <li><img src="img/location.png" alt="Ubicación"> Calle Ejemplo 123, Ciudad, País</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+  
+
+  
+  <!------------------------------------------------------------------------------------------------------------------->
+
+
+  <button class="scroll-to-top" onclick="scrollToTop()">⬆</button>
+
+
+
+
+  <script src="js/javaScript.js"></script>
+</body>
+</html>
